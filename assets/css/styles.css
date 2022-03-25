@@ -1,0 +1,51 @@
+@font-face {
+    font-family: SFPro;
+    src: url(./../res/bold.otf);
+}
+
+* {
+    font-family: SFPro;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+h2, .navbar-light .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.slideitem {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    display: inline-block;
+}
+
+.splide__slide {
+    text-align: center;
+}
+
+#bgheader {
+  background-image: url('./../res/header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh + 60px);
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+#slanted {
+    height: 200px;
+    background-color: white !important;
+    margin-top: -60px;
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); 
+}
