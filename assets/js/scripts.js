@@ -37,4 +37,10 @@ function toggleNavBg() {
 $( "#navbar" ).loadWith( "./assets/parts/navbar.html" );
 $( "#header" ).loadWith( "./assets/parts/header.html" );
 $( "#poweredby" ).loadWith( "./assets/parts/poweredby.html" );
+$( "#summary" ).loadWith( "./assets/parts/summary.html" );
+$( "#faq" ).loadWith( "./assets/parts/faq.html" );
+$( "#benefits" ).loadWith( "./assets/parts/benefits.html" );
+$( "#contact" ).loadWith( "./assets/parts/contact.html" );
+$( "#footer" ).loadWith( "./assets/parts/footer.html" );
+
 document.dispatchEvent(new Event("onFinishLoad", {bubbles: true}));

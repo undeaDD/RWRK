@@ -5,6 +5,18 @@
 
 * {
     font-family: SFPro;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .navbar-toggler,
@@ -39,13 +51,146 @@ h2, .navbar-light .navbar-nav .nav-link {
   height: calc(100vh + 60px);
   width: 100%;
   object-fit: cover;
-  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#slanted {
-    height: 200px;
+#bgheader2 {
+    background-image: url('./../res/header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#headertext {
+    width: 50%;
+}
+
+@media (min-width: 768px) { 
+    #headertext {
+        width: 20% !important;
+    }
+}
+
+.slanted {
     background-color: white !important;
     margin-top: -60px;
     -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); 
+}
+
+
+.slanted-2 {
+    margin-top: 0px;
+    background-image: url('./../res/contact.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); 
+}
+
+#summary {
+    background-color: red;
+    height: 1000px;
+    width: 100%
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+.mt-n4 {
+    margin-top: -1.5rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: black  !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button:focus {
+    border-color: black !important;
+    box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%) !important;
+}
+
+.accordion-body {
+    background-color: #f8f9fa!important;
+}
+
+body{margin-top:20px;}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.pt-5 {
+    padding-top: 3rem !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+.border-0 {
+    border: 0 !important;
+}
+.position-relative {
+    position: relative !important;
+}
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+.card {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+}
+
+.member-profile {
+    top: -50px;
+    left: 0;
+}
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+
+.member-profile img {
+    width: 100px;
+    height: 100px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
 }
