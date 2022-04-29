@@ -44,7 +44,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 #bgheader {
-  background-image: url('./../res/splash.jpg');
+  background-image: url('./../res/header.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,7 +57,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 #bgheader2 {
-    background-image: url('./../res/splash.jpg');
+    background-image: url('./../res/header.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
