@@ -3,6 +3,16 @@
     src: url(./../res/bold.otf);
 }
 
+@font-face {
+    font-family: SFPro-Regular;
+    src: url(./../res/regular.otf);
+}
+
+@font-face {
+  font-family: SFPro-Semibold;
+  src: url(./../res/semibold.otf);
+}
+
 * {
     font-family: SFPro;
 
@@ -129,6 +139,11 @@ h2, .navbar-light .navbar-nav .nav-link {
 
 .accordion-body {
     background-color: #f8f9fa!important;
+    font-family: SFPro-Regular;
+}
+
+li {
+  font-family: SFPro-Regular;
 }
 
 body{margin-top:20px;}
@@ -143,6 +158,11 @@ body{margin-top:20px;}
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
 }
+
+.mb-0 {
+font-family: SFPro-Regular;
+}
+
 .border-0 {
     border: 0 !important;
 }
