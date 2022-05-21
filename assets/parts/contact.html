@@ -12,12 +12,13 @@
           >
             <div class="row">
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" name="email" id="email" placeholder="Email"/>
+                <input spellcheck="false" type="email" class="form-control" name="email" id="email" placeholder="Email" required/>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 form-group">
                 <textarea
+                  spellcheck="false"
                   placeholder="Type your message here ..."
                   class="form-control mt-4"
                   name="message"
@@ -30,6 +31,7 @@
             <div class="row mt-4">
               <div class="col-md-12">
                 <input
+                  id="contactFormButton"
                   type="submit"
                   value="Contact us"
                   class="btn btn-dark rounded-0 py-2 px-4 rounded-3"
@@ -43,3 +45,30 @@
     </div>
   </div>
 </div>
+
+<script>
+  var form = document.getElementById('contactForm');
+  var submitButton = document.getElementById('contactFormButton');
+
+  var email = document.getElementById('email');
+  var message = document.getElementById('message');
+
+  function processForm(e) {
+      if (e.preventDefault) e.preventDefault();
+      submitButton.disabled = true;
+
+      var oReq = new XMLHttpRequest();
+      var from = encodeURIComponent(email.value);
+      var msg = encodeURIComponent(message.value);
+      oReq.open("GET", "https://api.telegram.org/bot5362070946:AAEDRHut3Da_nl0hhBj-updiSI3wkBxR3zg/sendMessage?chat_id=-1001591294571&text=<b>" + from + "</b>%0a" + msg + "&parse_mode=html");
+      oReq.send();
+
+      return false;
+  }
+
+  if (form.attachEvent) {
+      form.attachEvent("submit", processForm);
+  } else {
+      form.addEventListener("submit", processForm);
+  }
+</script>

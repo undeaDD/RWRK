@@ -15,6 +15,7 @@ document.addEventListener("onFinishLoad", function() {
 
         document.getElementById("navbar").style.backgroundColor = `rgba(255, 255, 255, ${isOpague ? "0.85" : "0"})`;
         document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"})`;
+        document.styleSheets[1]["cssRules"][3].style["filter"] = `invert(${isOpague ? "0%" : "100%"})`;
     });
 
     document.addEventListener("click", (event) => {
