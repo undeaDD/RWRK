@@ -3,7 +3,7 @@ document.addEventListener("onFinishLoad", function() {
     window.addEventListener('scroll', () => {
         closeMenu();
         let y = window.scrollY || window.pageYOffset;
-        if (y > 20) {
+        if (y > 0) {
             if (isOpague) {
                 return;
             } else {
@@ -33,6 +33,7 @@ function closeMenu() {
 function toggleNavBg() {
     document.getElementById("navbar").style.backgroundColor = `rgba(255, 255, 255, 0.85)`;
     document.getElementById("navbar").style.backdropFilter = `blur("5px")`;
+    document.styleSheets[1]["cssRules"][3].style["filter"] = `invert(0%)`;
 }
 
 $( "#navbar" ).loadWith( "./assets/parts/navbar.html" );

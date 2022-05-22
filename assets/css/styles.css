@@ -80,11 +80,14 @@ h2, .navbar-light .navbar-nav .nav-link {
 
 .slanted {
     background-color: white !important;
-    margin-top: -60px;
+    margin-top: -70px;
     -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); 
 }
 
+.feature {
+  transform: translateY(-30px);
+}
 
 .slanted-2 {
     margin-top: 0px;
