@@ -75,6 +75,7 @@
          var wheel = Draggable.create("#wheel", {
            type: "rotation",
            throwProps: true,
+           constrainDimensions: true,
            snap: function (endValue) {
              return Math.round(endValue / 90) * 90;
            },
