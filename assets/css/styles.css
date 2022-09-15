@@ -19,6 +19,10 @@
     -o-user-drag: none;
 }
 
+html, body {
+  background-color: #f2f2f7ff !important;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -39,7 +43,8 @@ h2, .navbar-light .navbar-nav .nav-link {
 .slideitem {
     width: 100%;
     margin-top: 20px;
-    height: 50px;
+    padding: 10px;
+    height: 60px;
     display: inline-block;
 }
 
@@ -79,6 +84,10 @@ h2, .navbar-light .navbar-nav .nav-link {
     background-attachment: fixed;
 }
 
+.card-body {
+  background-color: #ffffff;
+}
+
 #headertext {
     width: 50%;
 }
@@ -90,7 +99,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 .slanted {
-    background-color: white !important;
+    background-color: #f2f2f7ff !important;
     margin-top: -70px;
     -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); 
@@ -146,7 +155,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 .accordion-body {
-    background-color: #f8f9fa!important;
+    background-color: #f8f9fa !important;
 }
 
 body{
@@ -187,14 +196,15 @@ body{
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #ffffffff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,0.125);
-    border-radius: .25rem;
+    border-radius: 10px !important;
 }
 
 .card-body {
     padding: 0px 1rem 1rem 1rem !important;
+    border-radius: 10px;
 }
 
 .card-footer {
