@@ -43,8 +43,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 .slideitem {
     width: 100%;
     margin-top: 20px;
-    padding: 10px;
-    height: 60px;
+    height: 5vh;
     display: inline-block;
 }
 
