@@ -32,8 +32,8 @@ html, body {
     border: 0px !important;
 }
 
-.dynamicColor {
-  filter: invert(100%);
+.splide__list {
+  align-items: flex-start;
 }
 
 h2, .navbar-light .navbar-nav .nav-link {

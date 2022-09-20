@@ -1,26 +1,24 @@
-document.addEventListener("onFinishLoad", function() {
-    var isOpague = false;
-    window.addEventListener('scroll', () => {
-        closeMenu();
-        let y = window.scrollY || window.pageYOffset;
-        if (y > 0) {
-            if (isOpague) {
-                return;
-            } else {
-                isOpague = true;
-            }
+var isOpague = false;
+window.addEventListener('scroll', () => {
+    closeMenu();
+    let y = window.scrollY || window.pageYOffset;
+    if (y > 0) {
+        if (isOpague) {
+            return;
         } else {
-            isOpague = false;
+            isOpague = true;
         }
+    } else {
+        isOpague = false;
+    }
 
-        document.getElementById("navbar").style.backgroundColor = `rgba(255, 255, 255, ${isOpague ? "0.85" : "0"})`;
-        document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"})`;
-        document.styleSheets[1]["cssRules"][4].style["filter"] = `invert(${isOpague ? "0%" : "100%"})`;
-    });
+    document.getElementById("navbar").style.backgroundColor = `rgba(255, 255, 255, ${isOpague ? "0.85" : "0"})`;
+    document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"})`;
+    document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
+});
 
-    document.addEventListener("click", (event) => {
-        closeMenu();
-    });
+document.addEventListener("click", (event) => {
+    closeMenu();
 });
 
 function closeMenu() {
