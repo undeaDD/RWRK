@@ -1,19 +1,21 @@
 <div class="pt-5 slanted">
-    <h5 style="padding: 20px 20px;" class="pt-5">Our partners</h5>
+    <div class="container">
+        <h5 style="padding: 20px 20px;" class="pt-5">Our partners</h5>
 
-    <div class="splide">
-        <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><a href="https://uk.burberry.com/" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/burberry.svg"/></div></div></a></li>
-                  <li class="splide__slide"><a href="https://www.esprit.co.uk/" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/esprit.svg"/></div></div></a></li>
-                  <li class="splide__slide"><a href="https://www.superdry.com/" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/superdry.svg"/></div></div></a></li>
-                  <li class="splide__slide"><a href="https://uk.tommy.com/" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/tommy-hilfiger.svg"/></div></div></a></li>
-              </ul>
+        <div class="splide" id="poweredbySplide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><a href="https://aamilclothing.co.uk" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/aamilclothing.png"/></div></div></a></li>
+                    <li class="splide__slide"><a href="https://shakkarworld.com" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/shakkarworld.png"/></div></div></a></li>
+                    <li class="splide__slide"><a href="https://www.shopjendaya.com" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/jendaya.png"/></div></div></a></li>
+                    <li class="splide__slide"><a href="#"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/more.png"/></div></div></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <script>
-        var splide = new Splide( '.splide', {
+        var splide = new Splide( '#poweredbySplide', {
             type: "loop",
             perPage: 3,
             autoplay : true,
@@ -21,7 +23,7 @@
             pagination: false,
             arrows: false,
             gap: 20,
-            padding: 20,
+            padding: "5rem",
         } );
         splide.mount();
     </script>
