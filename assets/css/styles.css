@@ -64,6 +64,21 @@ html, body {
     object-fit: contain;
 }
 
+.splide__pagination__page.is-active {
+  transform: scale(1.7) !important;
+  margin: 0px 10px 0px 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .splide__pagination__page, .splide__pagination__page.is-active {
+    background-color: #ccc !important;
+  }
+}
+
+.splide__pagination__page, .splide__pagination__page.is-active {
+  background-color: black;
+}
+
 .splide__slide {
     text-align: center;
 }
