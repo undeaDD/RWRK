@@ -439,3 +439,10 @@ button.collapsed .card-footer:after {
     font-weight:600
   }
 }
+
+.sitefooter {
+  height: 300px;
+  width: 100%;
+  margin-top: -1px;
+  background-color: #26272b;
+}
