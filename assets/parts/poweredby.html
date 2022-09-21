@@ -5,10 +5,54 @@
         <div class="splide" id="poweredbySplide">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><a href="https://aamilclothing.co.uk" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/aamilclothing.png"/></div></div></a></li>
-                    <li class="splide__slide"><a href="https://shakkarworld.com" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/shakkarworld.png"/></div></div></a></li>
-                    <li class="splide__slide"><a href="https://www.shopjendaya.com" target="_blank"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/jendaya.png"/></div></div></a></li>
-                    <li class="splide__slide"><a href="#"><div class="card"><div class="card-body"><img class="slideitem" src="./assets/res/more.png"/></div></div></a></li>
+                    <li class="splide__slide">
+                        <a href="https://aamilclothing.co.uk" target="_blank">
+                            <div class="card">
+                                <div class="card-body">
+                                    <picture class="slideitem">
+                                        <source srcset="./assets/res/aamilclothing_dark.png" media="(prefers-color-scheme: dark)">
+                                        <img class="slideitem" src="./assets/res/aamilclothing.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://shakkarworld.com" target="_blank">
+                            <div class="card">
+                                <div class="card-body">
+                                    <picture class="slideitem">
+                                        <source srcset="./assets/res/shakkarworld_dark.png" media="(prefers-color-scheme: dark)">
+                                        <img class="slideitem" src="./assets/res/shakkarworld.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://www.shopjendaya.com" target="_blank">
+                            <div class="card">
+                                <div class="card-body">
+                                    <picture class="slideitem">
+                                        <source srcset="./assets/res/jendaya_dark.png" media="(prefers-color-scheme: dark)">
+                                        <img class="slideitem" src="./assets/res/jendaya.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#" target="_blank">
+                            <div class="card">
+                                <div class="card-body">
+                                    <picture class="slideitem">
+                                        <source srcset="./assets/res/more_dark.png" media="(prefers-color-scheme: dark)">
+                                        <img class="slideitem" src="./assets/res/more.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -27,4 +71,4 @@
         } );
         splide.mount();
     </script>
-  </div>
+</div>
