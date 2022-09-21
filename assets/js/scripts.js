@@ -1,4 +1,5 @@
 var isOpague = false;
+var isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 window.addEventListener('scroll', () => {
     let y = window.scrollY || window.pageYOffset;
 

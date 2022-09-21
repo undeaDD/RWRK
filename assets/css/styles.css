@@ -17,6 +17,7 @@
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+
 }
 
 html, body {
@@ -278,7 +279,7 @@ button.collapsed .card-footer:after {
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color: var(--rwrk-primary-bg);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -444,5 +445,5 @@ button.collapsed .card-footer:after {
   height: 300px;
   width: 100%;
   margin-top: -1px;
-  background-color: #26272b;
+  background-color: var(--rwrk-primary-bg);
 }
