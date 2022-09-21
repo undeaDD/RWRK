@@ -20,7 +20,7 @@
 }
 
 html, body {
-  background-color: #f2f2f7ff !important;
+  background-color: var(--rwrk-primary-bg) !important;
   -webkit-text-size-adjust: none;
 	touch-action: manipulation;
 }
@@ -46,10 +46,6 @@ html, body {
 
 .splide__list {
   align-items: flex-start;
-}
-
-h2, .navbar-light .navbar-nav .nav-link {
-    color: black !important;
 }
 
 .slideitem {
@@ -113,7 +109,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 .card-body {
-  background-color: #ffffff;
+  background-color: var(--rwrk-secondary-bg) !important;
 }
 
 #headertext {
@@ -127,7 +123,7 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 .slanted {
-    background-color: #f2f2f7ff !important;
+    background-color: var(--rwrk-primary-bg) !important;
     margin-top: -70px;
     -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); 
