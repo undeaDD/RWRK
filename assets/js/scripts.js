@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
     }
 
     let backup = getComputedStyle(document.documentElement).getPropertyValue('--rwrk-nav-backup');
-    document.documentElement.style.setProperty("--rwrk-nav-bg", backup + (isOpague ? "D9" : "ff"));
+    document.documentElement.style.setProperty("--rwrk-nav-bg", backup + (isOpague ? "D9" : "00"));
     document.getElementById("navbar").style.filter = `opacity()`;
     document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
     document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
