@@ -49,6 +49,10 @@ html, body {
   }
 }
 
+.splide {
+  padding: 0px 3em;
+}
+
 .splide__list {
   align-items: flex-start;
 }
