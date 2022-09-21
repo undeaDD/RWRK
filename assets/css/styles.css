@@ -53,10 +53,13 @@ html, body {
   align-items: flex-start;
 }
 
+.slidewrapper {
+  margin: 10px 0px;
+}
+
 .slideitem {
     width: 100%;
     height: 7vh;
-    margin: 10px 0px;
     display: inline-block;
     object-fit: contain;
 }
