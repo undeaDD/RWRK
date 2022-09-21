@@ -25,6 +25,10 @@ html, body {
 	touch-action: manipulation;
 }
 
+.navbar {
+  background-color: var(--rwrk-nav-bg) !important;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -177,8 +181,12 @@ html, body {
     box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%) !important;
 }
 
+.accordion-item {
+  background-color: var(--rwrk-secondary-bg) !important;
+}
+
 .accordion-body {
-    background-color: #f8f9fa !important;
+  background-color: var(--rwrk-tertiary-bg) !important;
 }
 
 .py-5 {

@@ -12,8 +12,8 @@ window.addEventListener('scroll', () => {
         isOpague = false;
     }
 
-    document.getElementById("navbar").style.backgroundColor = `rgba(255, 255, 255, ${isOpague ? "0.85" : "0"})`;
-    document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"})`;
+    document.getElementById("navbar").style.filter = `opacity(${isOpague ? "0.85" : "0"})`;
+    document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
     document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
 });
 
