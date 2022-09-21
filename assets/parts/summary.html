@@ -41,8 +41,9 @@
     </div>
 
     <script>
+        let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         var splide = new Splide( '#summarySplide', {
-            type: "loop",
+            type: "slide",
             gap: 20,
             padding: 20,
         } );

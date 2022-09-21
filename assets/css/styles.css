@@ -21,6 +21,8 @@
 
 html, body {
   background-color: #f2f2f7ff !important;
+  -webkit-text-size-adjust: none;
+	touch-action: manipulation;
 }
 
 .navbar-toggler,
@@ -30,6 +32,16 @@ html, body {
     outline: none !important;
     box-shadow: none !important;
     border: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .splide {
+    padding: 0px !important;
+  }
+
+  .splide__arrow {
+    display: none !important;
+  }
 }
 
 .splide__list {
@@ -138,7 +150,6 @@ h2, .navbar-light .navbar-nav .nav-link {
 }
 
 #summary {
-    background-color: red;
     height: 1000px;
     width: 100%
 }
