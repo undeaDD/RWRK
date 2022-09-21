@@ -215,7 +215,7 @@ html, body {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #ffffffff;
+    background-color: var(--rwrk-secondary-bg) !important;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,0.125);
     border-radius: 10px !important;
