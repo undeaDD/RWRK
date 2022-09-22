@@ -3,6 +3,16 @@
     src: url(./../res/bold.otf);
 }
 
+@font-face {
+  font-family: SFPro-SemiBold;
+  src: url(./../res/semibold.otf);
+}
+
+@font-face {
+  font-family: SFPro-Regular;
+  src: url(./../res/regular.otf);
+}
+
 * {
     font-family: SFPro;
 
@@ -19,7 +29,9 @@
     -o-user-drag: none;
 
 }
-
+p {
+    font-family: SFPro-Regular;
+}
 html, body {
   background-color: var(--rwrk-primary-bg) !important;
   -webkit-text-size-adjust: none;
