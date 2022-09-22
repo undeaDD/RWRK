@@ -3,7 +3,7 @@
         <h5 style="padding: 20px 20px;" class="pt-5">The Process</h5>
         <div class="splide" id="summarySplide">
             <div class="splide__track">
-                    <ul class="splide__list">
+                    <ul class="splide__list" style="align-items: stretch;">
                         <li class="splide__slide">
                             <div class="card h-100">
                                 <img class="card-img-top" src="./assets/res/step1.jpg">
@@ -41,11 +41,10 @@
     </div>
 
     <script>
-        var splide = new Splide( '#summarySplide', {
+        new Splide('#summarySplide', {
             type: "slide",
             gap: 20,
             padding: 20,
-        } );
-        splide.mount();
+        }).mount();
     </script>
 </div>

@@ -49,16 +49,38 @@ html, body {
   }
 }
 
+.splide {
+  padding: 0px 3em;
+}
+
 .splide__list {
   align-items: flex-start;
+}
+
+.slidewrapper {
+  margin: 10px 0px;
 }
 
 .slideitem {
     width: 100%;
     height: 7vh;
-    margin: 10px 0px;
     display: inline-block;
     object-fit: contain;
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1.7) !important;
+  margin: 0px 10px 0px 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .splide__pagination__page, .splide__pagination__page.is-active {
+    background-color: #ccc !important;
+  }
+}
+
+.splide__pagination__page, .splide__pagination__page.is-active {
+  background-color: black;
 }
 
 .splide__slide {
@@ -76,8 +98,7 @@ html, body {
 }
 
 .card-text {
-  margin: 20px;
-  margin-bottom: 50px !important;
+  margin: 20px !important;
   color: gray;
 }
 
@@ -91,6 +112,31 @@ html, body {
   #bgheader {
     height: calc(100vh + 60px);
   }
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(10px - 1px) !important;
+  border-top-right-radius: calc(10px - 1px) !important;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius:  10px !important;
+}
+
+.accordion-item:last-of-type .accordion-button {
+  border-bottom-left-radius: calc(10px - 1px) !important;
+  border-bottom-right-radius: calc(10px - 1px) !important;
+}
+
+#contactFormButton, .form-control {
+  background-color: #222 !important;
+  border-radius: 10px !important;
 }
 
 #bgheader {

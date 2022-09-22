@@ -18,13 +18,13 @@ window.addEventListener('scroll', () => {
     document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
 
     if (window.matchMedia) {
-        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-            document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo.png`;
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementById("dynamicLogo").src = `./assets/res/logo.png`;
         } else {
-            document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
+            document.getElementById("dynamicLogo").src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
         }
     } else {
-        document.getElementsByClassName("dynamicColor")[0].src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
+        document.getElementById("dynamicLogo").src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
     }
 });
 
