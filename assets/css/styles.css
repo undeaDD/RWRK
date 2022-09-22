@@ -279,7 +279,7 @@ button.collapsed .card-footer:after {
 
 .site-footer
 {
-  background-color: var(--rwrk-primary-bg);
+  background-color: var(--rwrk-secondary-bg);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -445,5 +445,5 @@ button.collapsed .card-footer:after {
   height: 300px;
   width: 100%;
   margin-top: -1px;
-  background-color: var(--rwrk-primary-bg);
+  background-color: var(--rwrk-secondary-bg);
 }

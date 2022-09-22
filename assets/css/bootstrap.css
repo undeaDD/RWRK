@@ -169,7 +169,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: var(--rwrk-secondary-bg);
+  color: var(--bs-body-color);
 }
 abbr[data-bs-original-title],
 abbr[title] {
