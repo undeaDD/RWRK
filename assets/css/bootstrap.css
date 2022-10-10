@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
-:root {
-  --rwrk-primary-bg: #f2f2f7ff;
-  --rwrk-secondary-bg: #ffffff;
+:root { 
+  --rwrk-primary-bg: #fff;
+  --rwrk-secondary-bg: #AE997C;
   --rwrk-tertiary-bg: #f2f2f7;
   --rwrk-nav-bg: #ffffff00;
   --rwrk-nav-backup: #ffffff;
+  --rwrk-primary-color: #1C1265;
+  --rwrk-text-color: #0D0D0D;
+  --rwrk-header-text-color: #79513F;
 }
 
 :root {
@@ -543,7 +546,7 @@ progress {
   content: "— ";
 }
 .img-fluid {
-  max-width: 100%;
+  max-width: 40px;
   height: auto;
 }
 .img-thumbnail {
@@ -2985,7 +2988,6 @@ fieldset:disabled .btn {
 .btn-dark {
   color: #fff;
   background-color: #212529;
-  border-color: #212529;
 }
 .btn-dark:hover {
   color: #fff;
@@ -4309,10 +4311,7 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4356,8 +4355,6 @@ fieldset:disabled .btn {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;

@@ -546,8 +546,9 @@ progress {
   content: "— ";
 }
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 40px;
+  height: 40px;
+  margin-left: 18px;
 }
 .img-thumbnail {
   padding: 0.25rem;
@@ -4314,8 +4315,6 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #222;
   background-clip: border-box;
-  border: 1px solid rgba(250, 250, 250, 0.125);
-  border-radius: 0.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4359,8 +4358,6 @@ fieldset:disabled .btn {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(250, 250, 250, 0.03);
-  border-bottom: 1px solid rgba(250, 250, 250, 0.125);
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -9811,3 +9808,4 @@ body::selection {
   color: #cfcfcf;
   background: rgba(23, 162, 184, 0.5);
 }
+
