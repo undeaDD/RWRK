@@ -111,7 +111,6 @@ h5 {
 .card-img-top {
   height: 500px;
   object-fit: cover;
-  border-radius: 10px 10px 0px 0px !important;
 }
 .card-header {
   display: flex;
@@ -377,7 +376,6 @@ color: rgb(255, 255, 255);
 
 .card-body {
   padding: 0px 4rem 0px 4rem !important;
-  border-radius: 10px !important;
 }
 
 .card-footer {
