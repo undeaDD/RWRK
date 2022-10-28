@@ -69,14 +69,21 @@ body {
   align-items: flex-start;
 }
 
-.slidewrapper {
-  margin: 10px 0px;
+@media screen and (min-width: 800px) {
+  .slidewrapper {
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .slideitem {
+    height: 90px !important;
+  }
 }
 
 .slideitem {
   width: 100%;
-  height: 7vh;
-  display: inline-block;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -373,6 +380,10 @@ color: rgb(255, 255, 255);
 .card-body {
   padding: 0px 4rem 0px 4rem !important;
   border-radius: 10px !important;
+}
+
+.nopadding {
+  padding: 0px !important;
 }
 
 .card-footer {
