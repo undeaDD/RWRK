@@ -581,3 +581,9 @@ button.collapsed .card-footer:after {
 .accordion-body, .accordion-body li {
   font-family: SFPro-Regular;
 }
+
+.splide__track {
+  box-sizing: border-box;
+  border: white solid;
+  border-width: 2px;
+}
