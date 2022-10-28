@@ -210,21 +210,16 @@ h5 {
   background: var(--rwrk-secondary-bg);
   border-radius: 50%;
   color: black;
-  display: inline-block;
   height: 50px;
   font-weight: bold;
   font-size: 1.2em;
   width: 50px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.circle span {
-  display: table-cell;
-  vertical-align: middle;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  padding: 0 15px;
+.circle i {
+  margin-top: 32%;
 }
 
 .icon-container {
@@ -443,7 +438,8 @@ button.collapsed .card-footer:after {
   letter-spacing: 2px;
 }
 .site-footer a {
-  color: #737373;
+  /*color: #737373;*/
+  color: white;
 }
 .site-footer a:hover {
   color: #3366cc;
@@ -457,7 +453,8 @@ button.collapsed .card-footer:after {
   display: block;
 }
 .footer-links a {
-  color: #737373;
+  /*color: #737373;*/
+  color: white;
 }
 .footer-links a:active,
 .footer-links a:focus,
@@ -575,4 +572,12 @@ button.collapsed .card-footer:after {
   width: 100%;
   margin-top: -1px;
   background-color: var(--rwrk-secondary-bg);
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.accordion-body, .accordion-body li {
+  font-family: SFPro-Regular;
 }
