@@ -214,7 +214,7 @@ h5 {
 }
 
 .circle {
-  background: var(--rwrk-secondary-bg);
+  background: var(--rwrk-brown);
   border-radius: 50%;
   color: black;
   height: 50px;
@@ -486,7 +486,7 @@ button.collapsed .card-footer:after {
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: #33353d;
+  background-color: var(--rwrk-brown);
 }
 .copyright-text {
   margin: 0;
@@ -517,7 +517,7 @@ button.collapsed .card-footer:after {
 .social-icons li.title {
   margin-right: 15px;
   text-transform: uppercase;
-  color: #96a2b2;
+  color: white;
   font-weight: 700;
   font-size: 13px;
 }
@@ -533,7 +533,7 @@ button.collapsed .card-footer:after {
 }
 .social-icons a {
   background-color: #eceeef;
-  color: #818a91;
+  color: white;
   font-size: 16px;
   display: inline-block;
   line-height: 44px;
