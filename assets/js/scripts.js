@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty("--rwrk-nav-bg", backup + (isOpague ? "D9" : "00"));
     document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
 
-    if (window.matchMedia) {
+    /*if (window.matchMedia) {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.getElementById("dynamicLogo").src = `./assets/res/logo.png`;
         } else {
@@ -25,7 +25,8 @@ window.addEventListener('scroll', () => {
         }
     } else {
         document.getElementById("dynamicLogo").src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
-    }
+    }*/
+    document.getElementById("dynamicLogo").src = `./assets/res/logo${isOpague ? "_dark" : ""}.png`;
 });
 
 $( "#navbar" ).loadWith( "./assets/parts/navbar.html" );

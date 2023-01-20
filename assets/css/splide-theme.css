@@ -60,19 +60,22 @@
   z-index: 1;
 }
 .splide__arrow svg {
-  fill: var(--rwrk-secondary-bg);
+  fill: var(--rwrk-brown);
   height: 2.5em;
   transition: fill 0.2s linear;
   width: 2.5em;
+  opacity: 1;
 }
 .splide__arrow:hover:not(:disabled) svg {
-  fill: var(--rwrk-nav-bg);
+  fill: var(--rwrk-brown);
+  opacity: 1;
 }
 .splide__arrow:disabled {
   opacity: 0.3;
 }
 .splide__arrow:focus-visible {
-  outline: 3px solid var(--rwrk-secondary-bg);
+  outline: 3px solid var(--rwrk-brown);
+  opacity: 1;
   outline-offset: 3px;
 }
 .splide__arrow--prev {
@@ -109,7 +112,8 @@
   width: 20px;
 }
 .splide__pagination__page.is-active {
-  background: var(-bs--body-color);
+  background: var(--rwrk-brown);
+  background-color: var(--rwrk-brown) !important;
   z-index: 1;
 }
 .splide__pagination__page:hover {
