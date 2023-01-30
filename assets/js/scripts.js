@@ -38,5 +38,7 @@ $( "#benefits" ).loadWith( "./assets/parts/benefits.html" );
 $( "#contact" ).loadWith( "./assets/parts/contact.html" );
 $( "#footer" ).loadWith( "./assets/parts/footer.html" );
 $( "#aboutus" ).loadWith( "./assets/parts/aboutus.html" );
+$("#editorial").loadWith("./assets/parts/editorial.html");
+$("#blog-header").loadWith("./assets/parts/blog-header.html");
 
 document.dispatchEvent(new Event("onFinishLoad", {bubbles: true}));
