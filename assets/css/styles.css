@@ -42,7 +42,17 @@ body {
   background-color: var(--rwrk-nav-bg) !important;
 }
 
+.navIcon-dark {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
+.navIcon-light {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.nav-link {
+  color: var(--rwrk-nav-item-color) !important;
+}
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -223,30 +233,6 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#bgheader #btn-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin: 1em;
-  margin-top: 1em;
-  z-index: 100;
-}
-
-#bgheader #btn-menu .bton {
-  background-color: var(--rwrk-secondary-bg) !important;
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 10px 26px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
 }
 
 .blog-header-text {

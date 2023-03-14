@@ -1,14 +1,38 @@
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-    <div class="d-flex container-fluid justify-content-start">
-      <a class="navbar-brand ms-2" href="#">
-        <img
-          src="./assets/res/logo.png"
-          width="93"
-          height="24"
-          id="dynamicLogo"
-          class="d-inline-block"
-        />
-      </a>
-    
-    </div>
-  </nav>
+<nav id="navbar" class="navbar navbar-expand-sm fixed-top">
+  <a class="navbar-brand ms-2" href="#">
+    <img
+      src="./assets/res/logo.png"
+      width="93"
+      height="24"
+      id="dynamicLogo"
+      class="d-inline-block"
+    />
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon navIcon-dark"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navToggle">
+    <ul class="navbar-nav ms-auto mt-2 mt-sm-0 me-2">
+      <li class="nav-item ms-2 ms-0-ms">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-house fa-fw"></i>
+          Home
+        </a>
+      </li>
+      <li class="nav-item ms-2 ms-0-ms">
+        <a class="nav-link" href="blog.html">
+          <i class="fas fa-newspaper fa-fw"></i>
+          Blog
+        </a>
+      </li>
+      <li class="nav-item ms-2 ms-0-ms">
+        <a class="nav-link disabled" href="https://rwrkstudio.myshopify.com/"  style="color: gray !important">
+          <i class="fas fa-shop fa-fw"></i>
+          Shop
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

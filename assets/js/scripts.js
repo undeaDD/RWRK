@@ -15,6 +15,9 @@ window.addEventListener('scroll', () => {
 
     let backup = getComputedStyle(document.documentElement).getPropertyValue('--rwrk-nav-backup');
     document.documentElement.style.setProperty("--rwrk-nav-bg", backup + (isOpague ? "D9" : "00"));
+
+    document.documentElement.style.setProperty("--rwrk-nav-item-color", isOpague ? "black" : "white");
+
     document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
 
     /*if (window.matchMedia) {
