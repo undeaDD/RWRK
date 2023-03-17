@@ -22,13 +22,6 @@ $( "#footer" ).load( "./assets/parts/footer.html" );
 $( "#aboutus" ).load( "./assets/parts/aboutus.html" );
 $( "#editorial" ).load("./assets/parts/editorial.html");
 $( "#blog-header" ).load("./assets/parts/blog-header.html");
-
-$( "#blog-body" ).load("./assets/parts/blog-body.html", () => {
-    try {
-        document.getElementById("notionFrame").addEventListener('load',() => {
-            iFrameResize({ heightCalculationMethod: "max" }, '#notionFrame');
-        });
-    } catch (error) { console.log(error) }
-});
+$( "#blog-body" ).load("./assets/parts/blog-body.html");
 
 document.dispatchEvent(new Event("onFinishLoad", {bubbles: true}));
