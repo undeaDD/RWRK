@@ -203,7 +203,7 @@ h5 {
 }
 
 #bgheader {
-  background-image: url("./../res/splash.jpg");
+  background-image: url("./../res/splash.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +228,7 @@ h5 {
 }
 
 #bgheader2 {
-  background-image: url("./../res/splash.jpg");
+  background-image: url("./../res/splash.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
