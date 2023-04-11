@@ -658,12 +658,19 @@ button.collapsed .card-footer:after {
 .social-icons a.twitter:hover {
   background-color: #00aced;
 }
+.social-icons a.instagram:hover {
+  background-color: #F77737;
+}
+.social-icons a.tiktok:hover {
+  background-color: #ff0050;
+}
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: #0077b5;
 }
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
+.social-icons a.opensea:hover {
+  background-color: #2081E2;
 }
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
