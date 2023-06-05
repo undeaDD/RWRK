@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty("--rwrk-nav-bg", backup + (isOpague ? "D9" : "00"));
     document.documentElement.style.setProperty("--rwrk-nav-item-color", isOpague ? "black" : "white");
     document.getElementById("navbar").style.backdropFilter = `blur(${isOpague ? "5px" : "0px"}) opague`;
-    document.getElementById("dynamicLogo").src = `./assets/res/logo${isOpague ? "_dark" : ""}.webp`;
+    document.getElementById("logo").style.color = isOpague ? "black" : "white";
 });
 
 $( "#navbar" ).load( "./assets/parts/navbar.html" );

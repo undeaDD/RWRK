@@ -13,6 +13,11 @@
   src: url(./../res/regular.otf);
 }
 
+@font-face {
+  font-family: anton;
+  src: url(./../res/anton.ttf);
+}
+
 * {
   font-family: SFPro;
 
@@ -61,6 +66,16 @@ body {
   outline: none !important;
   box-shadow: none !important;
   border: 0px !important;
+}
+
+.logo {
+  font-family: anton;
+  font-size: 28px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 0 !important;
+  letter-spacing: 1px;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
