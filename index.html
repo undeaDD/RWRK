@@ -26,27 +26,47 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link href="./assets/css/fontawesome.css" rel="stylesheet" />
-    <link href="./assets/css/styles.css" rel="stylesheet" />
-    <link href="./assets/css/splide.css" rel="stylesheet" />
-    <link href="./assets/css/splide-theme.css" rel="stylesheet" />
+    <link href="./assets/css/mail_styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div id="navbar"></div>
-      <div id="header"></div>
-      <div id="poweredby"></div>
-      <div id="summary"></div>
-      <div id="benefits"></div>
-      <div id="aboutus"></div>
-      <!-- <div id="editorial"></div> -->
-      <div id="faq"></div>
-      <div id="contact"></div>
-      <div id="footer"></div>
+    <div class="container p-0">
+      <div class="row row-main">
+        <div class="col-md"></div>
+        <div class="col m-4 align-self-center justify-content-center">
+          <form
+            class="mb-5"
+            method="post"
+            id="contactForm"
+            name="contactForm"
+            novalidate="novalidate"
+          >
+            <h3>Almost There.</h3>
+            <p>Our website is currently closed.</br>Join our newsletter for further updates on when we open back.</p>
+            <div class="input-group">
+              <input type="email" id="email" class="form-control" placeholder="E-Mail">
+              <div class="input-group-append">
+                <button class="btn ms-2" type="submit" id="contactFormButton">Notify Me!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md"></div>
+      </div>
+      <div class="row row-footer">
+        <div class="col">
+          <ul class="social-icons d-flex align-items-end">
+            <li class="ms-auto"><a aria-label="Our Instagram Page" class="instagram" href="https://instagram.com/rwrkstudio?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a aria-label="Our Tiktok Page" class="tiktok" href="https://www.tiktok.com/@rwrkstudio?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a aria-label="Our Facebook Page" class="facebook" href="https://www.facebook.com/rwrkstudio"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a aria-label="Our Linkedin Page" class="linkedin" href="https://www.linkedin.com/company/rwrkstudio/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a aria-label="Our Opensea Page" class="opensea" href="https://opensea.io/RwrkStudio"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgc3R5bGU9ImNvbG9yOiByZ2IoMCwgMCwgMCk7IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gNS45MiAxMi40MDMgTCA1Ljk3MSAxMi4zMjIgTCA5LjA5NCA3LjQzOCBDIDkuMTM5IDcuMzY5IDkuMjQyIDcuMzc1IDkuMjc5IDcuNDQ4IEMgOS4yOCA3LjQ0OSA5LjI4IDcuNDUxIDkuMjgxIDcuNDUyIEMgOS44MDEgOC42MjEgMTAuMjUzIDEwLjA3NSAxMC4wNDEgMTAuOTggQyA5Ljk1MyAxMS4zNTIgOS43MDYgMTEuODU2IDkuNDI3IDEyLjMyMiBDIDkuMzkxIDEyLjM5IDkuMzUyIDEyLjQ1NyA5LjMxIDEyLjUyMSBDIDkuMjg5IDEyLjU1IDkuMjU2IDEyLjU2NyA5LjIyIDEyLjU2NiBMIDYuMDEzIDEyLjU2NiBDIDUuOTMxIDEyLjU2NyA1Ljg3OSAxMi40OCA1LjkxOSAxMi40MDggQyA1LjkyIDEyLjQwNyA1LjkyMSAxMi40MDUgNS45MjIgMTIuNDAzIEwgNS45MiAxMi40MDMgWiBNIDE5LjgzNCAxNC4wODMgQyAxOS44MzUgMTQuMTI3IDE5LjgwOSAxNC4xNjYgMTkuNzY5IDE0LjE4NCBDIDE5LjUyNiAxNC4yODcgMTguNjk5IDE0LjY2OSAxOC4zNTUgMTUuMTQ2IEMgMTcuNDc3IDE2LjM2OCAxNi44MDcgMTguMTE2IDE1LjMwNyAxOC4xMTYgTCA5LjA1MyAxOC4xMTYgQyA2LjgzMiAxOC4xMTMgNS4wMzUgMTYuMzA5IDUuMDQgMTQuMDg4IEwgNS4wNCAxNC4wMTYgQyA1LjA0IDEzLjk1OCA1LjA4OCAxMy45MSA1LjE0OCAxMy45MSBMIDguNjMzIDEzLjkxIEMgOC43MDMgMTMuOTEgOC43NTMgMTMuOTczIDguNzQ4IDE0LjA0MiBDIDguNzIyIDE0LjI2OCA4Ljc2NSAxNC41MDEgOC44NzMgMTQuNzEyIEMgOS4wNzkgMTUuMTMyIDkuNTA5IDE1LjM5NCA5Ljk3MiAxNS4zOTQgTCAxMS42OTggMTUuMzk0IEwgMTEuNjk4IDE0LjA0NyBMIDkuOTkgMTQuMDQ3IEMgOS45MDUgMTQuMDQ2IDkuODUzIDEzLjk1NCA5Ljg5NiAxMy44ODEgQyA5Ljg5OCAxMy44NzkgOS44OTkgMTMuODc2IDkuOTAxIDEzLjg3NCBMIDkuOTY0IDEzLjc4NCBDIDEwLjEyNCAxMy41NTMgMTAuMzU1IDEzLjE5OCAxMC41ODUgMTIuNzkyIEMgMTAuNzQxIDEyLjUxOCAxMC44OTMgMTIuMjI2IDExLjAxNSAxMS45MzIgQyAxMS4wMzkgMTEuODggMTEuMDU4IDExLjgyNSAxMS4wOCAxMS43NzIgQyAxMS4xMTMgMTEuNjc4IDExLjE0NyAxMS41OSAxMS4xNzEgMTEuNTAzIEMgMTEuMTk1IDExLjQyOSAxMS4yMTYgMTEuMzU1IDExLjIzNiAxMS4yOCBDIDExLjI5MyAxMS4wMyAxMS4zMTcgMTAuNzY2IDExLjMxNyAxMC40OTMgQyAxMS4zMTcgMTAuMzg1IDExLjMxMyAxMC4yNzIgMTEuMzAzIDEwLjE2NiBDIDExLjI5OCAxMC4wNDkgMTEuMjgzIDkuOTMxIDExLjI2OSA5LjgxNCBDIDExLjI1OCA5LjcwOSAxMS4yNDIgOS42MDUgMTEuMjIxIDkuNTAyIEMgMTEuMTk0IDkuMzQ1IDExLjE2MSA5LjE4OSAxMS4xMjMgOS4wMzQgTCAxMS4xMDkgOC45NzQgQyAxMS4wNzkgOC44NjYgMTEuMDUzIDguNzY0IDExLjAxOSA4LjY1NyBDIDEwLjkyNCA4LjMyOCAxMC44MTQgOC4wMDQgMTAuNjkxIDcuNjg1IEMgMTAuNjQ4IDcuNTY1IDEwLjYwMSA3LjQ0NyAxMC41NDkgNy4zMyBDIDEwLjQ3NyA3LjE1MiAxMC40MDMgNi45OTEgMTAuMzM2IDYuODQgQyAxMC4zMDMgNi43NzUgMTAuMjcxIDYuNzEgMTAuMjQyIDYuNjQzIEMgMTAuMjA5IDYuNTcxIDEwLjE3NSA2LjUgMTAuMTM5IDYuNDMgQyAxMC4xMTUgNi4zNzcgMTAuMDg2IDYuMzI2IDEwLjA2NyA2LjI3OCBMIDkuODU2IDUuODkgQyA5LjgyNyA1LjgzNyA5Ljg3NSA1Ljc3MiA5LjkzMyA1Ljc4OSBMIDExLjI1MyA2LjE0NiBMIDExLjI2MyA2LjE0NiBMIDExLjQzNiA2LjE5NiBMIDExLjYyOCA2LjI1IEwgMTEuNjk4IDYuMjY5IEwgMTEuNjk4IDUuNDg2IEMgMTEuNjk4IDUuMTA3IDEyIDQuOCAxMi4zNzcgNC44IEMgMTIuNTU3IDQuOCAxMi43MjkgNC44NzIgMTIuODU0IDUuMDAyIEMgMTIuOTgyIDUuMTMxIDEzLjA1NCA1LjMwNSAxMy4wNTQgNS40ODYgTCAxMy4wNTQgNi42NSBMIDEzLjE5NSA2LjY4OSBDIDEzLjIwNSA2LjY5NCAxMy4yMTcgNi42OTkgMTMuMjI2IDYuNzA2IEMgMTMuMjYgNi43MyAxMy4zMSA2Ljc2OCAxMy4zNzMgNi44MTYgQyAxMy40MjMgNi44NTQgMTMuNDc2IDYuOTAyIDEzLjUzOCA2Ljk1MyBDIDEzLjczNSA3LjExNCAxMy45MjcgNy4yODIgMTQuMTEyIDcuNDU3IEMgMTQuMzI2IDcuNjU2IDE0LjU2NiA3Ljg4OSAxNC43OTYgOC4xNDggQyAxNC44NjEgOC4yMjIgMTQuOTIzIDguMjk0IDE0Ljk4OCA4LjM3NCBDIDE1LjA1IDguNDUzIDE1LjEyIDguNTMgMTUuMTc4IDguNjA2IEMgMTUuMjU3IDguNzEgMTUuMzM4IDguODE4IDE1LjQxMyA4LjkzIEMgMTUuNDQ2IDguOTgzIDE1LjQ4NyA5LjAzOCAxNS41MTggOS4wOTEgQyAxNS42MTQgOS4yMzMgMTUuNjk2IDkuMzc5IDE1Ljc3NSA5LjUyNiBDIDE1LjgwOSA5LjU5MyAxNS44NDIgOS42NjcgMTUuODcxIDkuNzM5IEMgMTUuOTYgOS45MzYgMTYuMDMgMTAuMTM1IDE2LjA3MyAxMC4zMzcgQyAxNi4wODcgMTAuMzggMTYuMDk3IDEwLjQyNCAxNi4xMDIgMTAuNDY5IEwgMTYuMTAyIDEwLjQ3OSBDIDE2LjExNiAxMC41MzYgMTYuMTIxIDEwLjU5OSAxNi4xMjYgMTAuNjYzIEMgMTYuMTU0IDEwLjk1OSAxNi4xMTggMTEuMjU3IDE2LjAyIDExLjUzNyBDIDE1Ljk4OSAxMS42MjEgMTUuOTYgMTEuNzA3IDE1LjkyMiAxMS43OTEgQyAxNS44NDcgMTEuOTYxIDE1Ljc2MSAxMi4xMzQgMTUuNjU4IDEyLjI5MyBDIDE1LjYyNCAxMi4zNTMgMTUuNTgzIDEyLjQxNSAxNS41NDUgMTIuNDc1IEMgMTUuNTAyIDEyLjUzOCAxNS40NTYgMTIuNTk4IDE1LjQxOCAxMi42NTUgQyAxNS4zNjMgMTIuNzMxIDE1LjMwNSAxMi44MDQgMTUuMjQ1IDEyLjg3NiBDIDE1LjE5MiAxMi45NDggMTUuMTM5IDEzLjAyIDE1LjA3OSAxMy4wODUgQyAxNC45OTggMTMuMTgzIDE0LjkxOSAxMy4yNzUgMTQuODM0IDEzLjM2MyBDIDE0Ljc4NiAxMy40MjEgMTQuNzM0IDEzLjQ4MSAxNC42NzggMTMuNTMzIEMgMTQuNjI2IDEzLjU5MyAxNC41NyAxMy42NDYgMTQuNTIyIDEzLjY5NCBDIDE0LjQzOCAxMy43NzggMTQuMzcyIDEzLjg0MSAxNC4zMTQgMTMuODk2IEwgMTQuMTc3IDE0LjAxOCBDIDE0LjE1OCAxNC4wMzcgMTQuMTMyIDE0LjA0OCAxNC4xMDUgMTQuMDQ4IEwgMTMuMDU0IDE0LjA0OCBMIDEzLjA1NCAxNS4zOTQgTCAxNC4zNzYgMTUuMzk0IEMgMTQuNjcxIDE1LjM5NCAxNC45NTIgMTUuMjkgMTUuMTggMTUuMDk2IEMgMTUuMjU3IDE1LjAyOSAxNS41OTUgMTQuNzM2IDE1Ljk5NiAxNC4yOTQgQyAxNi4wMDkgMTQuMjc5IDE2LjAyNyAxNC4yNjggMTYuMDQ2IDE0LjI2NCBMIDE5LjY5NiAxMy4yMDcgQyAxOS43NjUgMTMuMTg3IDE5LjgzNCAxMy4yMzggMTkuODM0IDEzLjMxIEwgMTkuODM0IDE0LjA4MyBaIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAwcHg7IHN0cm9rZS1saW5lY2FwOiByb3VuZDsgZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyIvPgo8L3N2Zz4="></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/splide.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/mail_scripts.js"></script>
   </body>
 </html>

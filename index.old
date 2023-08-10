@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RWRK - Home</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="RWRK - Home">
+    <meta name="description" content="We are RwrkStudio, a lifestyle company that offers a white-label upcycling service to luxury fashion brands.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rwrkstudio.com/">
+    <meta property="og:title" content="RWRK - Home">
+    <meta property="og:description" content="We are RwrkStudio, a lifestyle company that offers a white-label upcycling service to luxury fashion brands.">
+    <meta property="og:image" content="https://rwrkstudio.com/assets/res/splash.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rwrkstudio.com/">
+    <meta property="twitter:title" content="RWRK - Home">
+    <meta property="twitter:description" content="We are RwrkStudio, a lifestyle company that offers a white-label upcycling service to luxury fashion brands.">
+    <meta property="twitter:image" content="https://rwrkstudio.com/assets/res/splash.webp">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="./assets/res/favicon.webp" rel="icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="./assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/splide.css" rel="stylesheet" />
+    <link href="./assets/css/splide-theme.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div id="navbar"></div>
+      <div id="header"></div>
+      <div id="poweredby"></div>
+      <div id="summary"></div>
+      <div id="benefits"></div>
+      <div id="aboutus"></div>
+      <!-- <div id="editorial"></div> -->
+      <div id="faq"></div>
+      <div id="contact"></div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/splide.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
