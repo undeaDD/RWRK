@@ -1,10 +1,10 @@
 var form = document.getElementById('contactForm');
 var submitButton = document.getElementById('contactFormButton');
-
 var email = document.getElementById('email');
 
 function processForm(e) {
-    if (e.preventDefault) e.preventDefault();
+    if (!email.value) { return false; }
+    e.preventDefault();
     submitButton.disabled = true;
 
     var oReq = new XMLHttpRequest();
