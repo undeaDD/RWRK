@@ -9,7 +9,7 @@ function processForm(e) {
 
     var oReq = new XMLHttpRequest();
     var from = encodeURIComponent(email.value);
-    oReq.open("GET", "https://api.telegram.org/bot5362070946:AAEDRHut3Da_nl0hhBj-updiSI3wkBxR3zg/sendMessage?chat_id=-1001591294571&text=<b>Notify me:</b>%20" + from + "&parse_mode=html");
+    oReq.open("POST", "https://deltasiege.de/api/spreadsheet?email=" + from);
     oReq.send();
 
     return false;
