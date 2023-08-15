@@ -30,7 +30,7 @@
   <body>
     <div class="container p-0">
       <div class="row row-main">
-        <div class="col-md"></div>
+        <div class="col-lg"></div>
         <div class="col m-4 align-self-center justify-content-center">
           <form
             class="mb-5"
@@ -41,16 +41,19 @@
           >
             <h1 class="logo mb-5">RWRK STUDIO</h1>
             <h3>Almost There.</h3>
-            <p>Our website is currently closed.</br>Join our newsletter for further updates on when we open back.</p>
-            <div class="input-group">
+            <p>Our website is currently closed.</br>Join the waitlist for updates on our next drop.</p>
+            <div id="formGroup" class="input-group">
               <input required type="email" id="email" class="form-control" placeholder="E-Mail">
               <div class="input-group-append">
                 <button class="btn ms-2" type="submit" id="contactFormButton">Notify Me!</button>
               </div>
             </div>
+            <div id="successToast" style="display: none;">
+              <button class="btn" type="submit" id="contactFormButton" disabled>Thanks for signing up!</button>
+            </div>
           </form>
         </div>
-        <div class="col-md"></div>
+        <div class="col-lg"></div>
       </div>
       <div class="row row-footer">
         <div class="col">
