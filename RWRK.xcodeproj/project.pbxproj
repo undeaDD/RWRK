@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120881A02AA6278F00E88931 /* RWRK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208819F2AA6278F00E88931 /* RWRK.swift */; };
+		120881A92AA6279000E88931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120881A82AA6279000E88931 /* Assets.xcassets */; };
+		120881AC2AA6279000E88931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120881AA2AA6279000E88931 /* LaunchScreen.storyboard */; };
+		120881CC2AA74CF700E88931 /* RWRKClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 120881B82AA74CF600E88931 /* RWRKClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		120881D12AA74D7900E88931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120881A82AA6279000E88931 /* Assets.xcassets */; };
+		120881D22AA74E6A00E88931 /* RWRK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208819F2AA6278F00E88931 /* RWRK.swift */; };
+		120881D52AA74E8500E88931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120881AA2AA6279000E88931 /* LaunchScreen.storyboard */; };
+		120881D92AA74F3500E88931 /* NFCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120881D82AA74F3500E88931 /* NFCManager.swift */; };
+		120881DB2AA7509F00E88931 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 120881DA2AA7509F00E88931 /* Localizable.xcstrings */; };
+		120881DC2AA7509F00E88931 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 120881DA2AA7509F00E88931 /* Localizable.xcstrings */; };
+		120881DD2AA7521E00E88931 /* NFCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120881D82AA74F3500E88931 /* NFCManager.swift */; };
+		120881E02AA7625600E88931 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120881DF2AA7625600E88931 /* HomeView.swift */; };
+		120881E12AA7625600E88931 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120881DF2AA7625600E88931 /* HomeView.swift */; };
+		12CF726C2AA7B60400FE65C7 /* AppClipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF726B2AA7B60400FE65C7 /* AppClipManager.swift */; };
+		12CF726D2AA7B65700FE65C7 /* AppClipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF726B2AA7B60400FE65C7 /* AppClipManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		120881CA2AA74CF700E88931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 120881942AA6278F00E88931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 120881B72AA74CF600E88931;
+			remoteInfo = RWRKClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		120881CD2AA74CF700E88931 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				120881CC2AA74CF700E88931 /* RWRKClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1208819C2AA6278F00E88931 /* RWRK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWRK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1208819F2AA6278F00E88931 /* RWRK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWRK.swift; sourceTree = "<group>"; };
+		120881A82AA6279000E88931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		120881AB2AA6279000E88931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		120881AD2AA6279000E88931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120881B32AA627A100E88931 /* RWRK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RWRK.entitlements; sourceTree = "<group>"; };
+		120881B82AA74CF600E88931 /* RWRKClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWRKClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		120881C82AA74CF700E88931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120881C92AA74CF700E88931 /* RWRKClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RWRKClip.entitlements; sourceTree = "<group>"; };
+		120881D82AA74F3500E88931 /* NFCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCManager.swift; sourceTree = "<group>"; };
+		120881DA2AA7509F00E88931 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		120881DF2AA7625600E88931 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		12CF726B2AA7B60400FE65C7 /* AppClipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		120881992AA6278F00E88931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120881B52AA74CF600E88931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120881932AA6278F00E88931 = {
+			isa = PBXGroup;
+			children = (
+				120881B92AA74CF600E88931 /* RWRKClip */,
+				1208819E2AA6278F00E88931 /* RWRK */,
+				1208819D2AA6278F00E88931 /* Products */,
+				120881E22AA762A900E88931 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1208819D2AA6278F00E88931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1208819C2AA6278F00E88931 /* RWRK.app */,
+				120881B82AA74CF600E88931 /* RWRKClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1208819E2AA6278F00E88931 /* RWRK */ = {
+			isa = PBXGroup;
+			children = (
+				120881D72AA74F2800E88931 /* Manager */,
+				120881D62AA74F2200E88931 /* Views */,
+				120881B32AA627A100E88931 /* RWRK.entitlements */,
+				1208819F2AA6278F00E88931 /* RWRK.swift */,
+				120881AA2AA6279000E88931 /* LaunchScreen.storyboard */,
+				120881DA2AA7509F00E88931 /* Localizable.xcstrings */,
+				120881A82AA6279000E88931 /* Assets.xcassets */,
+				120881AD2AA6279000E88931 /* Info.plist */,
+			);
+			path = RWRK;
+			sourceTree = "<group>";
+		};
+		120881B92AA74CF600E88931 /* RWRKClip */ = {
+			isa = PBXGroup;
+			children = (
+				120881C82AA74CF700E88931 /* Info.plist */,
+				120881C92AA74CF700E88931 /* RWRKClip.entitlements */,
+			);
+			path = RWRKClip;
+			sourceTree = "<group>";
+		};
+		120881D62AA74F2200E88931 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				120881DF2AA7625600E88931 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		120881D72AA74F2800E88931 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				120881D82AA74F3500E88931 /* NFCManager.swift */,
+				12CF726B2AA7B60400FE65C7 /* AppClipManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		120881E22AA762A900E88931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1208819B2AA6278F00E88931 /* RWRK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120881B02AA6279000E88931 /* Build configuration list for PBXNativeTarget "RWRK" */;
+			buildPhases = (
+				120881982AA6278F00E88931 /* Sources */,
+				120881992AA6278F00E88931 /* Frameworks */,
+				1208819A2AA6278F00E88931 /* Resources */,
+				120881CD2AA74CF700E88931 /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				120881CB2AA74CF700E88931 /* PBXTargetDependency */,
+			);
+			name = RWRK;
+			packageProductDependencies = (
+			);
+			productName = RWRK;
+			productReference = 1208819C2AA6278F00E88931 /* RWRK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		120881B72AA74CF600E88931 /* RWRKClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120881D02AA74CF700E88931 /* Build configuration list for PBXNativeTarget "RWRKClip" */;
+			buildPhases = (
+				120881B42AA74CF600E88931 /* Sources */,
+				120881B52AA74CF600E88931 /* Frameworks */,
+				120881B62AA74CF600E88931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RWRKClip;
+			packageProductDependencies = (
+			);
+			productName = RWRKClip;
+			productReference = 120881B82AA74CF600E88931 /* RWRKClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		120881942AA6278F00E88931 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1208819B2AA6278F00E88931 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					120881B72AA74CF600E88931 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 120881972AA6278F00E88931 /* Build configuration list for PBXProject "RWRK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 120881932AA6278F00E88931;
+			packageReferences = (
+			);
+			productRefGroup = 1208819D2AA6278F00E88931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1208819B2AA6278F00E88931 /* RWRK */,
+				120881B72AA74CF600E88931 /* RWRKClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1208819A2AA6278F00E88931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120881AC2AA6279000E88931 /* LaunchScreen.storyboard in Resources */,
+				120881A92AA6279000E88931 /* Assets.xcassets in Resources */,
+				120881DB2AA7509F00E88931 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120881B62AA74CF600E88931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120881D52AA74E8500E88931 /* LaunchScreen.storyboard in Resources */,
+				120881D12AA74D7900E88931 /* Assets.xcassets in Resources */,
+				120881DC2AA7509F00E88931 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		120881982AA6278F00E88931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120881D92AA74F3500E88931 /* NFCManager.swift in Sources */,
+				120881E02AA7625600E88931 /* HomeView.swift in Sources */,
+				120881A02AA6278F00E88931 /* RWRK.swift in Sources */,
+				12CF726C2AA7B60400FE65C7 /* AppClipManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120881B42AA74CF600E88931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120881D22AA74E6A00E88931 /* RWRK.swift in Sources */,
+				120881E12AA7625600E88931 /* HomeView.swift in Sources */,
+				120881DD2AA7521E00E88931 /* NFCManager.swift in Sources */,
+				12CF726D2AA7B65700FE65C7 /* AppClipManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		120881CB2AA74CF700E88931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 120881B72AA74CF600E88931 /* RWRKClip */;
+			targetProxy = 120881CA2AA74CF700E88931 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		120881AA2AA6279000E88931 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				120881AB2AA6279000E88931 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		120881AE2AA6279000E88931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		120881AF2AA6279000E88931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		120881B12AA6279000E88931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RWRK/RWRK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RWRK/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "To Scan RWRK NFC Tags";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.deltasiege.RWRK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		120881B22AA6279000E88931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RWRK/RWRK.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RWRK/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "To Scan RWRK NFC Tags";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.deltasiege.RWRK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		120881CE2AA74CF700E88931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RWRKClip/RWRKClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RWRKClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RWRK;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "To Scan RWRK NFC Tags";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.deltasiege.RWRK.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		120881CF2AA74CF700E88931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RWRKClip/RWRKClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RWRKClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RWRK;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "To Scan RWRK NFC Tags";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.deltasiege.RWRK.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		120881972AA6278F00E88931 /* Build configuration list for PBXProject "RWRK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120881AE2AA6279000E88931 /* Debug */,
+				120881AF2AA6279000E88931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120881B02AA6279000E88931 /* Build configuration list for PBXNativeTarget "RWRK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120881B12AA6279000E88931 /* Debug */,
+				120881B22AA6279000E88931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120881D02AA74CF700E88931 /* Build configuration list for PBXNativeTarget "RWRKClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120881CE2AA74CF700E88931 /* Debug */,
+				120881CF2AA74CF700E88931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 120881942AA6278F00E88931 /* Project object */;
+}
