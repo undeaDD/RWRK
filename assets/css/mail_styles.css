@@ -1,16 +1,6 @@
 @font-face {
-  font-family: SFPro;
-  src: url(./../res/bold.otf);
-}
-
-@font-face {
-  font-family: SFPro-SemiBold;
-  src: url(./../res/semibold.otf);
-}
-
-@font-face {
-  font-family: SFPro-Regular;
-  src: url(./../res/regular.otf);
+  font-family: 'Inconsolata';
+  src: url('./../res/Inconsolata.ttf') format('truetype');
 }
 
 @font-face {
@@ -19,7 +9,8 @@
 }
 
 * {
-  font-family: SFPro;
+  font-family: Inconsolata, monospace;
+  font-weight: 300;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -35,7 +26,8 @@
 }
 
 p {
-  font-family: SFPro-Regular;
+  font-family: Inconsolata, monospace;
+  color: #212529;
 }
 
 html,
@@ -49,14 +41,11 @@ body,
 }
 
 body {
-  background: url(./../res/email_bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #FDFFF5;
 }
 
-h3, p {
+h3 {
+  font-weight: 800;
   color: #212529;
 }
 
@@ -150,7 +139,7 @@ footer {
   padding: 30px;
 }
 .social-icons a {
-  background-color: #00000082 !important;
+  background-color: black !important;
   color: white;
   font-size: 16px;
   display: inline-block;
@@ -159,7 +148,6 @@ footer {
   height: 44px;
   text-align: center;
   margin-right: 8px;
-  border-radius: 100%;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -201,4 +189,18 @@ footer {
     margin-right: 0;
     font-weight: 600;
   }
+}
+
+.ms-2 {
+  margin-left: 0px !important
+}
+
+.btn {
+  border-radius: 0px !important;
+}
+
+.form-control, .form-control:focus {
+  border-color: black;
+  border-radius: 0px;
+  box-shadow: none;
 }
