@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "instagram": "npx tsx instagram.ts",
+    "tiktok": "npx tsx tiktok.ts"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.8",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^3.13.0"
+  }
+}
