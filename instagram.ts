@@ -25,29 +25,23 @@ const showFollowers = async (page: Page) => {
 }
 
 const scrapeProfile = async (index: number, page: Page, username: string = "-") => {  
-  await sleep(3);
+  await sleep(5);
 
-  // fix !!!
-  const avatar: ElementHandle<Element> = (await page.$$("img[alt$='profile picture']"))[1];
-  const avatarUrl: string = await page.evaluate(anchor => anchor?.getAttribute('src') ?? "-", avatar);
+  const avatar: ElementHandle<Element> = (await page.$$("img[alt$='profile picture'], img[alt$='Profile photo'], img[alt$='Profilbild']"))[1];
+  const avatarUrl: string = await page.evaluate(elem => elem?.getAttribute('src') ?? "-", avatar);
 
-  // fix !!!
-  const name: ElementHandle<Element> = (await page.$$("div > span[dir='auto']"))[0];
-  const nameText: string = await page.evaluate(anchor => anchor?.textContent ?? "-", name);
+  const nameSpans = await page.$$("div > span[dir='auto']");
+  const nameText: string | null = await page.evaluate(elem => elem?.textContent, nameSpans[11]);
 
   var bioText = "-";
   try {
-    const bio: ElementHandle<Element> = (await page.$$("div > h1[dir='auto']"))[0];
-    bioText = await page.evaluate(anchor => anchor?.textContent ?? "-", bio);
+    bioText = await page.$eval("div > h1[dir='auto']", e => e?.innerText ?? "-");
   } catch (error) {}
 
   const numbers: ElementHandle<Element>[] = await page.$$(".html-span");
   const posts: string = await page.evaluate(anchor => anchor.textContent ?? "0", numbers[0]);
   const followers: string = await page.evaluate(anchor => anchor.textContent ?? "0", numbers[1]);
   const following: string = await page.evaluate(anchor => anchor.textContent ?? "0", numbers[2]);
-
-  const noContent: ElementHandle<Element> = (await page.$$("div > span[dir='auto']"))[1];
-  const isBot: boolean = (await page.evaluate(anchor => anchor.textContent ?? "", noContent) === "No Posts Yet");
 
   const notVisible: ElementHandle<Element>[] = (await page.$$("div > h2"));
   const isPrivate = notVisible.length === 1;
@@ -57,15 +51,14 @@ const scrapeProfile = async (index: number, page: Page, username: string = "-") 
 
     avatar: avatarUrl,
     username: username,
-    realName: nameText,
+    realName: nameText ?? "-",
     bio: bioText,
 
     posts: posts,
     followers: followers,
     following: following,
 
-    isPrivate: isPrivate,
-    isBot: isBot
+    isPrivate: isPrivate
   });
 
   await sleep(2);
@@ -92,6 +85,8 @@ const run = async () => {
       
       // open link in new page ( for more infos )
       const tempPage = await browser.newPage();
+      await tempPage.setBypassCSP(true);
+      await tempPage.setJavaScriptEnabled(true);
       await tempPage.goto("https://www.instagram.com" + link);
       await scrapeProfile(index, tempPage, link?.replace("\/\g", ""));
       await tempPage.close();

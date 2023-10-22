@@ -9,6 +9,15 @@ const login = async (page: Page) => {
   await page.type('[name="username"]', 'dominic.drees@rwrkstudio.com');
   await page.type('[type="password"]', 'Tlqx\\W(~!EzApQAQs5x');
   await page.keyboard.press('Enter');
+
+/*
+  const readline = require('readline');
+  const rl = readline.createInterface({input: process.stdin, output: process.stdout});
+  rl.question('Press enter if the captcha is solved:', ans => {
+
+  });
+*/
+
   await sleep(2);
 }
 
