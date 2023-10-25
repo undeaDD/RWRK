@@ -14,5 +14,9 @@ export const setupBrowser = async (url: string) => {
 }
 
 export const gStore = async (json: Object) => {
-    console.log(json);
+    await fetch("https://deltasiege.de/api/instasheet", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(json)
+    })
 }

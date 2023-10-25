@@ -49,9 +49,9 @@ const scrapeProfile = async (index: number, page: Page, username: string = "-") 
   await gStore({
     index: index,
 
-    avatar: avatarUrl,
+    avatar: avatarUrl.trim(),
     username: username,
-    realName: nameText ?? "-",
+    realname: nameText ?? "-",
     bio: bioText,
 
     posts: posts,
