@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Dustbag Pufferjacket",
+    "imageUrl": "https://www.google.de",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Chanel",
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "name": "Old LV"
+      },
+      {
+        "name": "New LV",
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "name": "Custom"
+      }
+    ]
+  },
+  {
+    "title": "Dustbag Pufferjacket 2.0",
+    "imageUrl": "https://www.google.de",
+    "sizes": [
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "name": "New LV"
+      },
+      {
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "name": "Custom"
+      }
+    ]
+  },
+  {
+    "colors": [
+      {
+        "name": "New LV",
+        "color": [
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "title": "Dustbag Pufferjacket 3.0",
+    "sizes": [
+      "L"
+    ],
+    "imageUrl": "https://www.google.de"
+  }
+]
