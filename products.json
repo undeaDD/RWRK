@@ -39,33 +39,5 @@
         ]
       }
     ]
-  },
-  {
-    "title": "Dustbag Pufferjacket 2.0",
-    "imageUrl": "https://rwrkstudio.com/assets/res/p1.png",
-    "sizes": [
-      "XS",
-      "S"
-    ],
-    "colors": [
-      {
-        "color": [
-          0.76,
-          0.71,
-          0.48,
-          1
-        ],
-        "name": "Old LV"
-      },
-      {
-        "name": "New LV",
-        "color": [
-          0.90,
-          0.89,
-          0.83,
-          1
-        ]
-      }
-    ]
   }
 ]
