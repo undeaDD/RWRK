@@ -1,7 +1,7 @@
 [
   {
     "title": "Dustbag Pufferjacket",
-    "imageUrl": "https://www.google.de",
+    "imageUrl": "https://rwrkstudio.com/assets/res/p1.png",
     "sizes": [
       "XS",
       "S",
@@ -14,7 +14,7 @@
       {
         "name": "Chanel",
         "color": [
-          1,
+          0,
           0,
           0,
           1
@@ -22,9 +22,9 @@
       },
       {
         "color": [
-          1,
-          0,
-          0,
+          0.76,
+          0.71,
+          0.48,
           1
         ],
         "name": "Old LV"
@@ -32,67 +32,12 @@
       {
         "name": "New LV",
         "color": [
-          1,
-          0,
-          0,
-          1
-        ]
-      },
-      {
-        "color": [
-          1,
-          0,
-          0,
-          1
-        ],
-        "name": "Custom"
-      }
-    ]
-  },
-  {
-    "title": "Dustbag Pufferjacket 2.0",
-    "imageUrl": "https://www.google.de",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      {
-        "color": [
-          1,
-          0,
-          0,
-          1
-        ],
-        "name": "New LV"
-      },
-      {
-        "color": [
-          1,
-          0,
-          0,
-          1
-        ],
-        "name": "Custom"
-      }
-    ]
-  },
-  {
-    "colors": [
-      {
-        "name": "New LV",
-        "color": [
-          1,
-          0,
-          0,
+          0.90,
+          0.89,
+          0.83,
           1
         ]
       }
-    ],
-    "title": "Dustbag Pufferjacket 3.0",
-    "sizes": [
-      "L"
-    ],
-    "imageUrl": "https://www.google.de"
+    ]
   }
 ]
