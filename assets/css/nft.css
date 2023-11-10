@@ -27,10 +27,10 @@
     scrollbar-width: none;
 }
 
-:root, html, body, .container-fluid {
+:root, html, body {
     width: 100%; 
-    height: 105%; 
-    background-color: black !important;
+    height: 100%; 
+    background-color: black;
 }
 
 model-viewer {
@@ -92,4 +92,35 @@ vr {
     display: inline-block;
     margin: 0px 10px 0px 10px;
     width: 2px;
+}
+
+body { 
+	max-width: 650px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+}
+
+html {
+    background-color: black !important;
+}
+
+header {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #00000069;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    max-width: 650px; 
+	margin: 0 auto !important; 
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #00000069;
+    position: fixed; 
+    bottom: 0px; 
+    width: 100%;
+    height: 90px;
+    display: flex;
 }
