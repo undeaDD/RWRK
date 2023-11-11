@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="container" class="container mt-4">
+
+        <form>
+            <h6>What country will you be shipping from</h6>
+
+            <select class="form-select mb-3" id="country">
+                <option selected>-</option>
+                <option value="0">United Kingdom</option>
+                <option value="1">United States</option>
+                <option value="2">Europe</option>
+                <option value="3">Other</option>
+            </select>
+
+            <div class="row d-none" id="row1">
+                <div class="col">
+                    <input id="otherName" type="text" placeholder="First name" class="form-control mb-3">
+                </div>
+                <div class="col">
+                    <input id="otherEmail" type="text" placeholder="E-mail" class="form-control mb-3">
+                </div>
+            </div>
+            <div class="row d-none mb-3" id="row2">
+                <div class="col">
+                    <input id="otherCountry" type="text" placeholder="Country" class="form-control mb-3">
+                </div>
+                <div class="col">
+                    <input id="otherAddress" type="text" placeholder="City" class="form-control mb-3">
+                </div>
+            </div>
+            
+            <hr>
+
+            <h6>Select the brands you are sending below</h6>
+            <p>We are currently only accepting the brands below</p>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="lv" />
+                <label class="form-check-label" for="lv">
+                    Louis Vuitton
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="fendi" />
+                <label class="form-check-label" for="fendi">
+                    Fendi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="chanel" />
+                <label class="form-check-label" for="chanel">
+                    Chanel
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gucci" />
+                <label class="form-check-label" for="gucci">
+                    Gucci
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hermes" />
+                <label class="form-check-label" for="hermes">
+                    Hermes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="burberry" />
+                <label class="form-check-label" for="burberry">
+                    Burberry
+                </label>
+            </div>
+
+            <hr>
+
+            <h6>Select the quantity you are sending based on the sizes below</h6>
+            <p>Measure your dust bags to see which size category they fit into - see here for picture references and dustbag quality check.</p>
+            
+            <p class="text-danger">We don't give credit for bags smaller than 20x38cm, but feel free to send it.</p>
+
+            <input id="totalQuantity" type="number" min="0" max="100" class="form-control mb-3" value="0">
+
+            <h6>Total value estimate:</h6>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">£</span>
+                <input id="totalAmount" type="text" class="form-control" value="0" disabled>
+            </div>
+            
+            <hr>
+
+            <div id="otherSections">
+                <h6>Packaging</h6>
+                <p>Please weigh the everything whilst its in the box</p>
+
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Poly mailer
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Small box - 23x25cm
+                </label>
+                </div>
+
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Medium box - 50x70cm
+                </label>
+                </div>
+
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Large box - 100x120cm
+                </label>
+                </div>
+
+                <p>Total weight:</p>
+                <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">(kg, pounds)</span>
+                <input type="number" min="0" max="40" class="form-control" value="0">
+                </div>
+
+                <hr>
+
+                <h6>Customer information</h6>
+
+                <select class="form-select mb-3" id="addressCountry" disabled>
+                    <option selected>-</option>
+                    <option value="0">United Kingdom</option>
+                    <option value="1">United States</option>
+                    <option value="2">Europe</option>
+                    <option value="3">Other</option>
+                </select>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" placeholder="First name" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" placeholder="Last name" class="form-control">
+                    </div>
+                </div>
+                <input type="text" placeholder="Address" class="form-control mb-3">
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" placeholder="City" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" placeholder="Postcode / Zipcode" class="form-control">
+                    </div>
+                </div>
+
+                <input type="text" placeholder="E-Mail" class="form-control mb-3">
+
+                <input type="text" placeholder="Phone" class="form-control mb-3">
+
+                <hr>
+            </div>
+
+            <h6>Any additional comments</h6>
+
+            <textarea class="form-control" id="floatingTextarea2"></textarea>
+
+            <hr>
+            
+            <button type="submit" class="btn btn-primary">Upcycle</button>
+        </form>
+
+    </div>
+
+    <script /*disable-devtool-auto*/ src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+
+    <script>
+        let countryElement = document.getElementById("country");
+        let addressCountry = document.getElementById("addressCountry");
+
+        countryElement.addEventListener('change', () => {
+            let value = countryElement.value;
+            addressCountry.value = value;
+            if (value === "3") {
+                document.getElementById("row1").classList.remove("d-none");
+                document.getElementById("row2").classList.remove("d-none");
+                document.getElementById("otherSections").classList.add("d-none");
+                otherSections
+            } else {
+                document.getElementById("row1").classList.add("d-none");
+                document.getElementById("row2").classList.add("d-none");
+                document.getElementById("otherSections").classList.remove("d-none");
+            }
+        });
+
+        let totalAmount = document.getElementById("totalAmount");
+        let totalQuantity = document.getElementById("totalQuantity")
+        totalQuantity.addEventListener('change', calcAmount);
+
+        function calcAmount() {
+            totalAmount.value = totalQuantity.value * 10 + " - " + totalQuantity.value * 20;
+        }
+
+    </script>
+
+  </body>
+</html>
+
+
