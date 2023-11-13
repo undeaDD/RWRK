@@ -204,3 +204,8 @@ footer {
   border-radius: 0px;
   box-shadow: none;
 }
+
+.footer-icons {
+  width: 100%;
+  margin: 50px 0px;
+}
