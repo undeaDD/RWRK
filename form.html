@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
     <div id="container" class="container mt-4">
@@ -181,34 +180,8 @@
     </div>
 
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
-
-    <script>
-        let countryElement = document.getElementById("country");
-        let addressCountry = document.getElementById("addressCountry");
-
-        countryElement.addEventListener('change', () => {
-            let value = countryElement.value;
-            addressCountry.value = value;
-            if (value === "3") {
-                document.getElementById("row1").classList.remove("d-none");
-                document.getElementById("row2").classList.remove("d-none");
-                document.getElementById("otherSections").classList.add("d-none");
-                otherSections
-            } else {
-                document.getElementById("row1").classList.add("d-none");
-                document.getElementById("row2").classList.add("d-none");
-                document.getElementById("otherSections").classList.remove("d-none");
-            }
-        });
-
-        let totalAmount = document.getElementById("totalAmount");
-        let totalQuantity = document.getElementById("totalQuantity")
-        totalQuantity.addEventListener('change', calcAmount);
-
-        function calcAmount() {
-            totalAmount.value = totalQuantity.value * 10 + " - " + totalQuantity.value * 20;
-        }
-    </script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
 
