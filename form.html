@@ -12,18 +12,20 @@
     <link href="./assets/res/favicon.webp" rel="icon" />
     <style>
         body { background: #fdfff5;}
-        img {width: 1.2rem; height: 1.2rem; vertical-align: text-bottom; margin-right: 5px;}
+        .icon {width: 1.6rem; height: 1.6rem; vertical-align: text-bottom; margin-right: 8px;}
+        img {width: 1.25rem; height: 1.25rem; vertical-align: text-bottom; margin-right: 8px;}
         .list-group-item { background-color: transparent; border: none; }
         .input-group-text { width: 150px; }
+        .form-check-input:focus, .form-control:focus, .form-select:focus { border-color: #000000; box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%); }
     </style>
   </head>
   <body>
     <div id="container" class="container mt-4">
 
-        <form>
-            <h6><img src="https://img.icons8.com/ios-glyphs/64/country.png">What country will you be shipping from</h6>
+        <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/send-dust-bag">
+            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/country.png">What country will you be shipping from</h5>
 
-            <select class="form-select mb-3" id="country">
+            <select autocomplete="off" required class="form-select mb-3" id="country" name="country">
                 <option selected>-</option>
                 <optgroup label="US Partners">
                     <option value="0">United States</option>
@@ -88,29 +90,29 @@
             </select>
 
             <div class="alert alert-danger d-none" role="alert" id="row0">
-                <img src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
+                <img class="icon" src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
                 We dont accept shipments from your country currently, but feel free to submit the form anyways, well keep you updated.
             </div>
             <div class="row d-none" id="row1">
                 <div class="col">
-                    <input id="otherName" type="text" placeholder="First name" class="form-control mb-3">
+                    <input autocomplete="name" name="otherName" id="otherName" type="text" placeholder="First name" class="form-control mb-3">
                 </div>
                 <div class="col">
-                    <input id="otherEmail" type="text" placeholder="E-mail" class="form-control mb-3">
+                    <input autocomplete="email" inputmode="email" name="otherEmail" id="otherEmail" type="text" placeholder="E-mail" class="form-control mb-3">
                 </div>
             </div>
             <div class="row d-none" id="row2">
                 <div class="col">
-                    <input id="otherCountry" type="text" placeholder="Country" class="form-control mb-3">
+                    <input autocomplete="country-name" name="otherCountry" id="otherCountry" type="text" placeholder="Country" class="form-control mb-3">
                 </div>
                 <div class="col">
-                    <input id="otherAddress" type="text" placeholder="City" class="form-control mb-3">
+                    <input autocomplete="shipping address-level2" name="otherCity" id="otherCity" type="text" placeholder="City" class="form-control mb-3">
                 </div>
             </div>
             
             <hr>
             
-            <h6><img src="https://img.icons8.com/ios-glyphs/64/shopping-bag.png">Select the brands you are sending below</h6>
+            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/shopping-bag.png">Select the brands you are sending below</h5>
             <p>We are currently only accepting the brands below</p>
             
             <ul class="list-group mb-3">
@@ -120,7 +122,7 @@
                             <img src="./assets/res/louis vuitton.webp">
                             Louis Vuitton
                         </div>
-                        <input id="lvAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="lvAmount" id="lvAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -129,7 +131,7 @@
                             <img src="./assets/res/fendi.webp">
                             Fendi
                         </div>
-                        <input id="fendiAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="fendiAmount" id="fendiAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -138,7 +140,7 @@
                             <img src="./assets/res/chanel.webp">
                             Chanel
                         </div>
-                        <input id="chanelAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="chanelAmount" id="chanelAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -147,7 +149,7 @@
                             <img src="./assets/res/gucci.webp">
                             Gucci
                         </div>
-                        <input id="gucciAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="gucciAmount" id="gucciAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -156,7 +158,7 @@
                             <img src="./assets/res/hermes.webp">
                             Hermes
                         </div>
-                        <input id="hermesAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="hermesAmount" id="hermesAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -165,17 +167,17 @@
                             <img src="./assets/res/burberry.webp">
                             Burberry
                         </div>
-                        <input id="burberryAmount" type="number" class="form-control" value="0">
+                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="burberryAmount" id="burberryAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
                     <hr>
-                    <h6>Total value estimate:</h6>
+                    <h5>Total value estimate:</h5>
                     <div class="input-group">
-                        <div class="input-group-text">
+                        <div class="input-group-text" id="totalCurrency">
                             £
                         </div>
-                        <input id="totalAmount" type="text" class="form-control" value="0" disabled>
+                        <input name="totalAmount" id="totalAmount" type="text" class="form-control" value="0" disabled>
                     </div>
                 </li>
             </ul>
@@ -188,57 +190,49 @@
             <hr>
 
             <div id="otherSections">
-                <h6><img src="https://img.icons8.com/ios-glyphs/64/packing.png">Packaging</h6>
+                <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/packing.png">Packaging</h5>
                 <p>Please weigh the everything whilst its in the box</p>
 
                 <hr>
 
-                <h6><img src="https://img.icons8.com/ios-glyphs/64/mailbox-with-letter.png">Customer information</h6>
-
-                <select class="form-select mb-3" id="addressCountry" disabled>
-                    <option selected>-</option>
-                    <option value="0">United Kingdom</option>
-                    <option value="1">United States</option>
-                    <option value="2">Europe</option>
-                    <option value="3">Other</option>
-                </select>
+                <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/mailbox-with-letter.png">Customer information</h5>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <input type="text" placeholder="First name" class="form-control">
+                        <input autocomplete="given-name" name="firstname" type="text" placeholder="First name" class="form-control">
                     </div>
                     <div class="col">
-                        <input type="text" placeholder="Last name" class="form-control">
+                        <input autocomplete="family-name" name="lastname" type="text" placeholder="Last name" class="form-control">
                     </div>
                 </div>
-                <input type="text" placeholder="Address" class="form-control mb-3">
+
+                <input autocomplete="shipping address-line1" name="address" type="text" placeholder="Address" class="form-control mb-3">
                 
                 <div class="row mb-3">
                     <div class="col">
-                        <input type="text" placeholder="City" class="form-control">
+                        <input autocomplete="shipping address-level2" name="city" type="text" placeholder="City" class="form-control">
                     </div>
                     <div class="col">
-                        <input type="text" placeholder="Postcode / Zipcode" class="form-control">
+                        <input autocomplete="postal-code" type="text" name="zip" placeholder="Postcode / Zipcode" class="form-control">
                     </div>
                 </div>
 
-                <input type="text" placeholder="E-Mail" class="form-control mb-3">
-
-                <input type="text" placeholder="Phone" class="form-control mb-3">
+                <input type="text" class="form-control mb-3" id="addressCountry" disabled value="Country: -">
+                <input inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
+                <input inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-3">
 
                 <hr>
             </div>
 
-            <h6><img src="https://img.icons8.com/ios-glyphs/64/create-new.png">Any additional comments</h6>
+            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/create-new.png">Any additional comments</h5>
 
-            <textarea class="form-control" id="floatingTextarea2"></textarea>
+            <textarea name="notes" class="form-control" id="floatingTextarea2" rows="5"></textarea>
 
             <hr>
             
             <button type="submit" class="btn btn-dark">
                 Upcycle
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/sent.png" alt="sent"/>
-
+                <img src="https://img.icons8.com/ios-glyphs/64/ffffff/sent.png">
             </button>
         </form>
 
