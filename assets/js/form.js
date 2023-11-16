@@ -1,6 +1,10 @@
 if (window === window.parent) {
-  location.href = "https://rwrkstudio.com";
+  const value = new URLSearchParams(window.location.search).get('debug');
+  if (value === null || value !== "true") {
+    location.href = "https://rwrkstudio.com";
+  }
 }
+
 
 let countryElement = document.getElementById("country");
 let addressCountry = document.getElementById("addressCountry");
