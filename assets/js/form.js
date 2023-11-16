@@ -1,5 +1,5 @@
 if (window === window.parent) {
-  //location.href = "https://rwrkstudio.com";
+  location.href = "https://rwrkstudio.com";
 }
 
 let countryElement = document.getElementById("country");
