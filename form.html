@@ -12,7 +12,10 @@
     <link href="./assets/res/favicon.webp" rel="icon" />
     <style>
         body { background: #fdfff5;}
-        img {width: 1.2rem; height: 1.2rem; vertical-align: text-bottom; margin-right: 5px;} </style>
+        img {width: 1.2rem; height: 1.2rem; vertical-align: text-bottom; margin-right: 5px;}
+        .list-group-item { background-color: transparent; border: none; }
+        .input-group-text { width: 150px; }
+    </style>
   </head>
   <body>
     <div id="container" class="container mt-4">
@@ -96,7 +99,7 @@
                     <input id="otherEmail" type="text" placeholder="E-mail" class="form-control mb-3">
                 </div>
             </div>
-            <div class="row d-none mb-3" id="row2">
+            <div class="row d-none" id="row2">
                 <div class="col">
                     <input id="otherCountry" type="text" placeholder="Country" class="form-control mb-3">
                 </div>
@@ -110,53 +113,76 @@
             <h6><img src="https://img.icons8.com/ios-glyphs/64/shopping-bag.png">Select the brands you are sending below</h6>
             <p>We are currently only accepting the brands below</p>
             
-
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="lv" />
-                <label class="form-check-label" for="lv">
-                    Louis Vuitton
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="fendi" />
-                <label class="form-check-label" for="fendi">
-                    Fendi
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="chanel" />
-                <label class="form-check-label" for="chanel">
-                    Chanel
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gucci" />
-                <label class="form-check-label" for="gucci">
-                    Gucci
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="hermes" />
-                <label class="form-check-label" for="hermes">
-                    Hermes
-                </label>
-            </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="burberry" />
-                <label class="form-check-label" for="burberry">
-                    Burberry
-                </label>
-            </div>
-
-            <h6>Total value estimate:</h6>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">£</span>
-                <input id="totalAmount" type="text" class="form-control" value="0" disabled>
-            </div>
+            <ul class="list-group mb-3">
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/louis vuitton.png">
+                            Louis Vuitton
+                        </div>
+                        <input id="lvAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/fendi.png">
+                            Fendi
+                        </div>
+                        <input id="fendiAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/chanel.png">
+                            Chanel
+                        </div>
+                        <input id="chanelAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/gucci.png">
+                            Gucci
+                        </div>
+                        <input id="gucciAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/hermes.png">
+                            Hermes
+                        </div>
+                        <input id="hermesAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <img src="./assets/res/burberry.png">
+                            Burberry
+                        </div>
+                        <input id="burberryAmount" type="number" class="form-control" value="0">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <hr>
+                    <h6>Total value estimate:</h6>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            £
+                        </div>
+                        <input id="totalAmount" type="text" class="form-control" value="0" disabled>
+                    </div>
+                </li>
+            </ul>
 
             <div class="alert alert-danger" role="alert">
                 <img src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
-                We don't give credit for bags <b>smaller than 20x38cm</b>, but feel free to send them.
+                We don't give credit for bags <b>smaller than 20x38cm</b>, but you can still send them to be upcycled.
             </div>
 
             <hr>
