@@ -10,21 +10,84 @@
 
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link href="./assets/res/favicon.webp" rel="icon" />
+    <style>
+        body { background: #fdfff5;}
+        img {width: 1.2rem; height: 1.2rem; vertical-align: text-bottom; margin-right: 5px;} </style>
   </head>
   <body>
     <div id="container" class="container mt-4">
 
         <form>
-            <h6>What country will you be shipping from</h6>
+            <h6><img src="https://img.icons8.com/ios-glyphs/64/country.png">What country will you be shipping from</h6>
 
             <select class="form-select mb-3" id="country">
                 <option selected>-</option>
-                <option value="0">United Kingdom</option>
-                <option value="1">United States</option>
-                <option value="2">Europe</option>
-                <option value="3">Other</option>
+                <optgroup label="US Partners">
+                    <option value="0">United States</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Mexico</option>
+                </optgroup>
+                <optgroup label="UK Partners">
+                    <option value="3">Albania</option>
+                    <option value="4">Andorra</option>
+                    <option value="5">Armenia</option>
+                    <option value="6">Austria</option>
+                    <option value="7">Azerbaijan</option>
+                    <option value="8">Belarus</option>
+                    <option value="9">Belgium</option>
+                    <option value="10">Bosnia and Herzegovina</option>
+                    <option value="11">Bulgaria</option>
+                    <option value="12">Croatia</option>
+                    <option value="13">Cyprus</option>
+                    <option value="14">Czechia</option>
+                    <option value="15">Denmark</option>
+                    <option value="16">Estonia</option>
+                    <option value="17">Finland</option>
+                    <option value="18">France</option>
+                    <option value="19">Georgia</option>
+                    <option value="20">Germany</option>
+                    <option value="21">Greece</option>
+                    <option value="22">Hungary</option>
+                    <option value="23">Iceland</option>
+                    <option value="24">Ireland</option>
+                    <option value="25">Italy</option>
+                    <option value="26">Kazakhstan</option>
+                    <option value="27">Kosovo</option>
+                    <option value="28">Latvia</option>
+                    <option value="29">Liechtenstein</option>
+                    <option value="30">Lithuania</option>
+                    <option value="31">Luxembourg</option>
+                    <option value="32">Malta</option>
+                    <option value="33">Moldova</option>
+                    <option value="34">Monaco</option>
+                    <option value="35">Montenegro</option>
+                    <option value="36">Netherlands</option>
+                    <option value="37">North Macedonia</option>
+                    <option value="38">Norway</option>
+                    <option value="39">Poland</option>
+                    <option value="40">Portugal</option>
+                    <option value="41">Romania</option>
+                    <option value="42">Russia</option>
+                    <option value="43">San Marino</option>
+                    <option value="44">Serbia</option>
+                    <option value="45">Slovakia</option>
+                    <option value="46">Slovenia</option>
+                    <option value="47">Spain</option>
+                    <option value="48">Sweden</option>
+                    <option value="49">Switzerland</option>
+                    <option value="50">Turkey</option>
+                    <option value="51">United Kingdom (UK)</option>
+                    <option value="52">United Arab Emirates</option>
+                </optgroup>
+                <optgroup label="Other Partners">
+                    <option value="53">Other</option>
+                </optgroup>
             </select>
 
+            <div class="alert alert-danger d-none" role="alert" id="row0">
+                <img src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
+                We dont accept shipments from your country currently, but feel free to submit the form anyways, well keep you updated.
+            </div>
             <div class="row d-none" id="row1">
                 <div class="col">
                     <input id="otherName" type="text" placeholder="First name" class="form-control mb-3">
@@ -43,9 +106,10 @@
             </div>
             
             <hr>
-
-            <h6>Select the brands you are sending below</h6>
+            
+            <h6><img src="https://img.icons8.com/ios-glyphs/64/shopping-bag.png">Select the brands you are sending below</h6>
             <p>We are currently only accepting the brands below</p>
+            
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="lv" />
@@ -77,70 +141,33 @@
                     Hermes
                 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" id="burberry" />
                 <label class="form-check-label" for="burberry">
                     Burberry
                 </label>
             </div>
 
-            <hr>
-
-            <h6>Select the quantity you are sending based on the sizes below</h6>
-            <p>Measure your dust bags to see which size category they fit into - see here for picture references and dustbag quality check.</p>
-            
-            <p class="text-danger">We don't give credit for bags smaller than 20x38cm, but feel free to send it.</p>
-
-            <input id="totalQuantity" type="number" min="0" max="100" class="form-control mb-3" value="0">
-
             <h6>Total value estimate:</h6>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">£</span>
                 <input id="totalAmount" type="text" class="form-control" value="0" disabled>
             </div>
-            
+
+            <div class="alert alert-danger" role="alert">
+                <img src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
+                We don't give credit for bags <b>smaller than 20x38cm</b>, but feel free to send them.
+            </div>
+
             <hr>
 
             <div id="otherSections">
-                <h6>Packaging</h6>
+                <h6><img src="https://img.icons8.com/ios-glyphs/64/packing.png">Packaging</h6>
                 <p>Please weigh the everything whilst its in the box</p>
-
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Poly mailer
-                </label>
-                </div>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Small box - 23x25cm
-                </label>
-                </div>
-
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Medium box - 50x70cm
-                </label>
-                </div>
-
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Large box - 100x120cm
-                </label>
-                </div>
-
-                <p>Total weight:</p>
-                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">(kg, pounds)</span>
-                <input type="number" min="0" max="40" class="form-control" value="0">
-                </div>
 
                 <hr>
 
-                <h6>Customer information</h6>
+                <h6><img src="https://img.icons8.com/ios-glyphs/64/mailbox-with-letter.png">Customer information</h6>
 
                 <select class="form-select mb-3" id="addressCountry" disabled>
                     <option selected>-</option>
@@ -176,18 +203,22 @@
                 <hr>
             </div>
 
-            <h6>Any additional comments</h6>
+            <h6><img src="https://img.icons8.com/ios-glyphs/64/create-new.png">Any additional comments</h6>
 
             <textarea class="form-control" id="floatingTextarea2"></textarea>
 
             <hr>
             
-            <button type="submit" class="btn btn-primary">Upcycle</button>
+            <button type="submit" class="btn btn-dark">
+                Upcycle
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/sent.png" alt="sent"/>
+
+            </button>
         </form>
 
     </div>
 
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+    <script /*disable-devtool-auto*/ src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/form.js"></script>
   </body>

@@ -1,5 +1,5 @@
 if (window === window.parent) {
-  location.href = "https://rwrkstudio.com";
+  //location.href = "https://rwrkstudio.com";
 }
 
 let countryElement = document.getElementById("country");
@@ -8,11 +8,13 @@ let addressCountry = document.getElementById("addressCountry");
 countryElement.addEventListener("change", () => {
   let value = countryElement.value;
   addressCountry.value = value;
-  if (value === "3") {
+  if (value === "53") {
+    document.getElementById("row0").classList.remove("d-none");
     document.getElementById("row1").classList.remove("d-none");
     document.getElementById("row2").classList.remove("d-none");
     document.getElementById("otherSections").classList.add("d-none");
   } else {
+    document.getElementById("row0").classList.add("d-none");
     document.getElementById("row1").classList.add("d-none");
     document.getElementById("row2").classList.add("d-none");
     document.getElementById("otherSections").classList.remove("d-none");
