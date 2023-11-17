@@ -26,8 +26,6 @@ countryElement.addEventListener("change", (e) => {
     document.getElementById("otherSections").classList.remove("d-none");
   }
 
-
-
   switch (value) {
     case "0":
     case "1":

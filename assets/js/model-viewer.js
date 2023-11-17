@@ -8,12 +8,10 @@ let t=(e$,ex)=>"method"!==ex.kind||!ex.descriptor||"value"in ex.descriptor?{kind
   width: 300px;
   height: 150px;
 }
-
 .container {
   position: relative;
   overflow: hidden;
 }
-
 .userInput {
   width: 100%;
   height: 100%;
@@ -22,26 +20,15 @@ let t=(e$,ex)=>"method"!==ex.kind||!ex.descriptor||"value"in ex.descriptor?{kind
   outline-offset: -1px;
   outline-width: 1px;
 }
-
 canvas {
   position: absolute;
   display: none;
   pointer-events: none;
-  /* NOTE(cdata): Chrome 76 and below apparently have a bug
-   * that causes our canvas not to display pixels unless it is
-   * on its own render layer
-   * @see https://github.com/google/model-viewer/pull/755#issuecomment-536597893
-   */
   transform: translateZ(0);
 }
-
 .show {
   display: block;
 }
-
-/* Adapted from HTML5 Boilerplate
- *
- * @see https://github.com/h5bp/html5-boilerplate/blob/ceb4620c78fc82e13534fc44202a3f168754873f/dist/css/main.css#L122-L133 */
 .screen-reader-only {
   border: 0;
   left: 0;
@@ -107,8 +94,6 @@ canvas {
 #default-poster {
   width: 100%;
   height: 100%;
-  /* The default poster is a <button> so we need to set display
-   * to prevent it from being affected by text-align: */
   display: block;
   position: absolute;
   border: none;

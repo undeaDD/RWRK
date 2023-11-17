@@ -10,20 +10,13 @@
 
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link href="./assets/res/favicon.webp" rel="icon" />
-    <style>
-        body { background: #fdfff5;}
-        .icon {width: 1.6rem; height: 1.6rem; vertical-align: text-bottom; margin-right: 8px;}
-        img {width: 1.25rem; height: 1.25rem; vertical-align: text-bottom; margin-right: 8px;}
-        .list-group-item { background-color: transparent; border: none; }
-        .input-group-text { width: 150px; }
-        .form-check-input:focus, .form-control:focus, .form-select:focus { border-color: #000000; box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%); }
-    </style>
+    <link href="./assets/css/form_styles.css" rel="stylesheet" />
   </head>
   <body>
     <div id="container" class="container mt-4">
 
         <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/send-dust-bag">
-            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/country.png">What country will you be shipping from</h5>
+            <h5><img class="icon" src="assets/res/country.webp">What country will you be shipping from</h5>
 
             <select autocomplete="off" required class="form-select mb-3" id="country" name="country">
                 <option selected>-</option>
@@ -90,7 +83,7 @@
             </select>
 
             <div class="alert alert-danger d-none" role="alert" id="row0">
-                <img class="icon" src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
+                <img class="icon" src="assets/res/info.webp">
                 We dont accept shipments from your country currently, but feel free to submit the form anyways, well keep you updated.
             </div>
             <div class="row d-none" id="row1">
@@ -112,7 +105,7 @@
             
             <hr>
             
-            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/shopping-bag.png">Select the brands you are sending below</h5>
+            <h5><img class="icon" src="assets/res/bag.webp">Select the brands you are sending below</h5>
             <p>We are currently only accepting the brands below</p>
             
             <ul class="list-group mb-3">
@@ -183,19 +176,19 @@
             </ul>
 
             <div class="alert alert-danger" role="alert">
-                <img src="https://img.icons8.com/ios-glyphs/64/low-risk.png">
+                <img src="assets/res/info.webp">
                 We don't give credit for bags <b>smaller than 20x38cm</b>, but you can still send them to be upcycled.
             </div>
 
             <hr>
 
             <div id="otherSections">
-                <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/packing.png">Packaging</h5>
+                <h5><img class="icon" src="assets/res/packing.webp">Packaging</h5>
                 <p>Please weigh the everything whilst its in the box</p>
 
                 <hr>
 
-                <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/mailbox-with-letter.png">Customer information</h5>
+                <h5><img class="icon" src="assets/res/mailbox.webp">Customer information</h5>
 
                 <div class="row mb-3">
                     <div class="col">
@@ -224,7 +217,7 @@
                 <hr>
             </div>
 
-            <h5><img class="icon" src="https://img.icons8.com/ios-glyphs/64/create-new.png">Any additional comments</h5>
+            <h5><img class="icon" src="assets/res/note.webp">Any additional comments</h5>
 
             <textarea name="notes" class="form-control" id="floatingTextarea2" rows="5"></textarea>
 
@@ -232,7 +225,7 @@
             
             <button type="submit" class="btn btn-dark">
                 Upcycle
-                <img src="https://img.icons8.com/ios-glyphs/64/ffffff/sent.png">
+                <img src="assets/res/sent.webp">
             </button>
         </form>
 
@@ -241,11 +234,12 @@
     <script 
         disable-devtool-auto
         url="https://rwrkstudio.com"
+        timeOutUrl="https://rwrkstudio.com"
         md5="b326b5062b2f0e69046810717534cb09"
         tk-name="debug"
         disable-menu="true"
         clearLog="true"
-        src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"
+        src="./assets/js/antitamper.js"
     ></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/form.js"></script>
