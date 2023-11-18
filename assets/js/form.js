@@ -8,10 +8,12 @@ if (window === window.parent) {
 let countryElement = document.getElementById("country");
 let addressCountry = document.getElementById("addressCountry");
 let totalCurrency = document.getElementById("totalCurrency");
+let countryName = document.getElementById("countryName");
 var currencySymbol = "£";
 
 countryElement.addEventListener("change", (e) => {
   let value = countryElement.value;
+  countryName.value = countryElement.selectedOptions[0].text;
   addressCountry.value = countryElement.selectedOptions[0].text;
 
   if (value === "53") {
