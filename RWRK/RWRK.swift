@@ -6,10 +6,23 @@ struct RWRK: App {
     @StateObject var nfcManager = NFCManager()
     @StateObject var appClipManager = AppClipManager()
     
+    init() {
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithDefaultBackground()
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        UINavigationBar.appearance().tintColor = .white
+    }
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .background(.black)
+                .tint(Color("AccentColor", bundle: .main))
+                .background(Color("Background", bundle: .main))
                 .preferredColorScheme(.dark)
                 .environmentObject(nfcManager)
                 .environmentObject(appClipManager)
