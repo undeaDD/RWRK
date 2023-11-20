@@ -11,7 +11,8 @@ struct RWRK: App {
         coloredAppearance.configureWithDefaultBackground()
         coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
+        coloredAppearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+        
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
@@ -20,13 +21,15 @@ struct RWRK: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .tint(Color("AccentColor", bundle: .main))
-                .background(Color("Background", bundle: .main))
-                .preferredColorScheme(.dark)
-                .environmentObject(nfcManager)
-                .environmentObject(appClipManager)
-                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleSpotlight)
+            NavigationView {
+                HomeView()
+                    .tint(Color("AccentColor", bundle: .main))
+                    .background(Color("Background", bundle: .main))
+                    .preferredColorScheme(.dark)
+                    .environmentObject(nfcManager)
+                    .environmentObject(appClipManager)
+                    .onContinueUserActivity(NSUserActivityTypeBrowsingWeb, perform: handleSpotlight)
+            }
         }
     }
     
