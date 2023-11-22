@@ -10,9 +10,13 @@ let addressCountry = document.getElementById("addressCountry");
 let totalCurrency = document.getElementById("totalCurrency");
 let countryName = document.getElementById("countryName");
 var currencySymbol = "£";
+var currentCountryId = "0";
 
 countryElement.addEventListener("change", (e) => {
   let value = countryElement.value;
+  currentCountryId = value;
+  toggleSubmitButton();
+  
   countryName.value = countryElement.selectedOptions[0].text;
   addressCountry.value = countryElement.selectedOptions[0].text;
 
@@ -94,9 +98,12 @@ const calcAmount = () => {
   max += burberryValue * 20.0 * multiplier;
 
   totalAmount.value = min + " - " + max;
+  toggleSubmitButton();
+}
 
+const toggleSubmitButton = () => {
   let amountIsZero = lvAmount.value + fendiAmount.value + chanelAmount.value + gucciAmount.value + hermesAmount.value + burberryAmount.value === 0
-  submitButton.disabled = amountIsZero;
+  submitButton.disabled = amountIsZero || currentCountryId === "0";
 }
 
 const constrainUserInput = (id) => {
