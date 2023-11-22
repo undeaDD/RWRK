@@ -56,6 +56,8 @@ let gucciAmount = document.getElementById("gucciAmount");
 let hermesAmount = document.getElementById("hermesAmount");
 let burberryAmount = document.getElementById("burberryAmount");
 
+let submitButton = document.getElementById("submitButton");
+
 const calcAmount = () => {
   var min = 0;
   var max = 0;
@@ -92,6 +94,9 @@ const calcAmount = () => {
   max += burberryValue * 20.0 * multiplier;
 
   totalAmount.value = min + " - " + max;
+
+  let amountIsZero = lvAmount.value + fendiAmount.value + chanelAmount.value + gucciAmount.value + hermesAmount.value + burberryAmount.value === 0
+  submitButton.disabled = amountIsZero;
 }
 
 const constrainUserInput = (id) => {
