@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://rwrkstudio.com/sitemap.xml
+Sitemap: https://api.rwrkstudio.com/sitemap.xml
