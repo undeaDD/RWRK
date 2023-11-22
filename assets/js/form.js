@@ -1,7 +1,7 @@
 if (window === window.parent) {
   const value = new URLSearchParams(window.location.search).get('debug');
   if (value === null || value !== "true") {
-    location.href = "https://rwrkstudio.com";
+    parent.location.href = "https://rwrkstudio.com";
   }
 }
 
@@ -16,7 +16,7 @@ countryElement.addEventListener("change", (e) => {
   let value = countryElement.value;
   currentCountryId = value;
   toggleSubmitButton();
-  
+
   countryName.value = countryElement.selectedOptions[0].text;
   addressCountry.value = countryElement.selectedOptions[0].text;
 
