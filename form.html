@@ -16,10 +16,10 @@
     <div id="container" class="container mt-4">
 
         <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/send-dust-bag">
-            <h5><img class="icon" src="assets/res/country.webp">What country will you be shipping from</h5>
+            <h5 class="my-4"><img class="icon" src="assets/res/country.webp">What country will you be shipping from</h5>
 
             <input name="countryName" id="countryName" type="hidden">
-            <select autocomplete="off" required class="form-select mb-3" id="country" name="country">
+            <select autocomplete="off" required class="form-select mb-4" id="country" name="country">
                 <option selected>-</option>
                 <optgroup label="US Partners">
                     <option value="0">United States</option>
@@ -106,10 +106,10 @@
             
             <hr>
             
-            <h5><img class="icon" src="assets/res/bag.webp">Select the brands you are sending below</h5>
+            <h5 class="mt-4"><img class="icon" src="assets/res/bag.webp">Select the brands you are sending below</h5>
             <p>We are currently only accepting the brands below</p>
             
-            <ul class="list-group mb-3">
+            <ul class="list-group">
                 <li class="list-group-item">
                     <div class="input-group">
                         <div class="input-group-text">
@@ -164,9 +164,9 @@
                         <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="burberryAmount" id="burberryAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item mb-4">
                     <hr>
-                    <h5>Total value estimate:</h5>
+                    <h5 class="mt-4">Total value estimate:</h5>
                     <div class="input-group">
                         <div class="input-group-text" id="totalCurrency">
                             £
@@ -176,7 +176,7 @@
                 </li>
             </ul>
 
-            <div class="alert alert-danger" role="alert">
+            <div class="alert alert-danger mb-4" role="alert">
                 <img src="assets/res/info.webp">
                 We don't give credit for bags <b>smaller than 20x38cm</b>, but you can still send them to be upcycled.
             </div>
@@ -184,12 +184,12 @@
             <hr>
 
             <div id="otherSections">
-                <h5><img class="icon" src="assets/res/packing.webp">Packaging</h5>
-                <p>Please weigh the everything whilst its in the box</p>
+                <h5 class="mt-4"><img class="icon" src="assets/res/packing.webp">Packaging</h5>
+                <p class="mb-4">Please weigh the everything whilst its in the box</p>
 
                 <hr>
 
-                <h5><img class="icon" src="assets/res/mailbox.webp">Customer information</h5>
+                <h5 class="my-4"><img class="icon" src="assets/res/mailbox.webp">Customer information</h5>
 
                 <div class="row mb-3">
                     <div class="col">
@@ -213,18 +213,18 @@
 
                 <input type="text" class="form-control mb-3" id="addressCountry" disabled value="Country: -">
                 <input inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
-                <input inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-3">
+                <input inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-4">
 
                 <hr>
             </div>
 
-            <h5><img class="icon" src="assets/res/note.webp">Any additional comments</h5>
+            <h5 class="my-4"><img class="icon" src="assets/res/note.webp">Any additional comments</h5>
 
-            <textarea name="notes" class="form-control" id="floatingTextarea2" rows="5"></textarea>
+            <textarea name="notes" class="form-control mb-4" id="floatingTextarea2" rows="5"></textarea>
 
             <hr>
             
-            <button id="submitButton" type="submit" class="btn btn-dark" disabled>
+            <button id="submitButton" type="submit" class="btn btn-dark mt-2" disabled>
                 Upcycle
                 <img src="assets/res/sent.webp">
             </button>

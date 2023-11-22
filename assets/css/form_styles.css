@@ -28,7 +28,7 @@ img{
     border:none
 }
 .input-group-text{
-    width:150px
+    width:165px
 }
 .form-check-input:focus,.form-control:focus,.form-select:focus{
     border-color:#000;
@@ -54,6 +54,10 @@ h5 {
 }
 optgroup, .input-group-text {
     font-weight: bold;
+}
+#totalCurrency {
+    padding-right: 20px;
+    justify-content: flex-end;
 }
 #submitButton {
     padding-top: 10px;
