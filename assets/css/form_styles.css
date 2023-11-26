@@ -49,8 +49,9 @@ img{
     -o-user-drag:none;
     border-radius: 0px !important;
 }
-h5 {
-    font-family: anton;
+h6,h5,h4 {
+    font-weight:400;
+    font-size: 30px;
 }
 optgroup, .input-group-text {
     font-weight: bold;
@@ -58,7 +59,19 @@ optgroup, .input-group-text {
 #totalCurrency {
     padding-right: 20px;
     justify-content: flex-end;
+    background: 0 !important;
+    border: none;
 }
 #submitButton {
     padding-top: 10px;
+}
+.alert-dark {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #424242;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #000000;
+    padding: 0 80px;
 }
