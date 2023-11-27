@@ -18,18 +18,6 @@ countryElement.addEventListener("change", (e) => {
   countryName.value = countryElement.selectedOptions[0].text;
   addressCountry.value = countryElement.selectedOptions[0].text;
 
-  if (value === "53") {
-    document.getElementById("row0").classList.remove("d-none");
-    document.getElementById("row1").classList.remove("d-none");
-    document.getElementById("row2").classList.remove("d-none");
-    document.getElementById("otherSections").classList.add("d-none");
-  } else {
-    document.getElementById("row0").classList.add("d-none");
-    document.getElementById("row1").classList.add("d-none");
-    document.getElementById("row2").classList.add("d-none");
-    document.getElementById("otherSections").classList.remove("d-none");
-  }
-
   switch (value) {
     case "0":
     case "1":

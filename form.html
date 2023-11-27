@@ -78,31 +78,7 @@
                     <option value="51">United Kingdom (UK)</option>
                     <option value="52">United Arab Emirates</option>
                 </optgroup>
-                <optgroup label="Other Partners">
-                    <option value="53">Other</option>
-                </optgroup>
             </select>
-
-            <div class="alert alert-dark d-none" role="alert" id="row0">
-                <img src="assets/res/info.webp">
-                We dont accept shipments from your country currently, but feel free to submit the form anyways, well keep you updated.
-            </div>
-            <div class="row d-none" id="row1">
-                <div class="col">
-                    <input autocomplete="name" name="otherName" id="otherName" type="text" placeholder="First name" class="form-control mb-3">
-                </div>
-                <div class="col">
-                    <input autocomplete="email" inputmode="email" name="otherEmail" id="otherEmail" type="text" placeholder="E-mail" class="form-control mb-3">
-                </div>
-            </div>
-            <div class="row d-none" id="row2">
-                <div class="col">
-                    <input autocomplete="country-name" name="otherCountry" id="otherCountry" type="text" placeholder="Country" class="form-control mb-3">
-                </div>
-                <div class="col">
-                    <input autocomplete="shipping address-level2" name="otherCity" id="otherCity" type="text" placeholder="City" class="form-control mb-3">
-                </div>
-            </div>
             
             <hr>
             
@@ -193,27 +169,27 @@
 
                 <div class="row mb-3">
                     <div class="col">
-                        <input autocomplete="given-name" name="firstname" type="text" placeholder="First name" class="form-control">
+                        <input required autocomplete="given-name" name="firstname" type="text" placeholder="First name" class="form-control">
                     </div>
                     <div class="col">
-                        <input autocomplete="family-name" name="lastname" type="text" placeholder="Last name" class="form-control">
+                        <input required autocomplete="family-name" name="lastname" type="text" placeholder="Last name" class="form-control">
                     </div>
                 </div>
 
-                <input autocomplete="shipping address-line1" name="address" type="text" placeholder="Address" class="form-control mb-3">
+                <input required autocomplete="shipping address-line1" name="address" type="text" placeholder="Address" class="form-control mb-3">
                 
                 <div class="row mb-3">
                     <div class="col">
-                        <input autocomplete="shipping address-level2" name="city" type="text" placeholder="City" class="form-control">
+                        <input required autocomplete="shipping address-level2" name="city" type="text" placeholder="City" class="form-control">
                     </div>
                     <div class="col">
-                        <input autocomplete="postal-code" type="text" name="zip" placeholder="Postcode / Zipcode" class="form-control">
+                        <input required autocomplete="postal-code" type="text" name="zip" placeholder="Postcode / Zipcode" class="form-control">
                     </div>
                 </div>
 
                 <input type="text" class="form-control mb-3" id="addressCountry" disabled value="Country: -">
-                <input inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
-                <input inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-4">
+                <input required inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
+                <input required inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-4">
 
                 <hr>
             </div>
@@ -226,6 +202,7 @@
             
             <button id="submitButton" type="submit" class="btn btn-dark mt-2" disabled>
                 Upcycle
+                <img src="assets/res/sent.webp">
             </button>
         </form>
 
