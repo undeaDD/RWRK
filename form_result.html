@@ -19,9 +19,9 @@
         <div class="col-lg"></div>
         <div class="col m-4 align-self-center justify-content-center">
           <div class="mb-5">
-            <h1 id="titleField" class="logo mb-5">Success</h1>
-            <h3 id="subtitleField">Thanks for upcycling with us!</h3><br/>
-            <p id="descriptionField">Check your email for next steps</p>
+            <h1 id="titleField" class="logo mb-5"></h1>
+            <h3 id="subtitleField"></h3><br/>
+            <p id="descriptionField"></p>
           </div>
         </div>
         <div class="col-lg"></div>
@@ -29,7 +29,7 @@
     </div>
 
     <script 
-
+        disable-devtool-auto
         url="https://rwrkstudio.com"
         timeOutUrl="https://rwrkstudio.com"
         md5="b326b5062b2f0e69046810717534cb09"
@@ -40,6 +40,34 @@
     ></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script>
+      let params = new URLSearchParams(document.location.search);
+      let titleField = document.getElementById("titleField");
+      let subtitleField = document.getElementById("subtitleField");
+      let descriptionField = document.getElementById("descriptionField");
+
+      switch(params.get("error")) {
+        case "1":
+          titleField.innerText = "Error";
+          subtitleField.innerText = "This Page cannot be viewed outside our main page";
+          descriptionField.innerText = "Go back to: https://rwrkstudio.com";
+          break;
+        case "2":
+          titleField.innerText = "Error";
+          subtitleField.innerText = "You selected an invalid country";
+          descriptionField.innerText = "Try again";
+          break;
+        case "3":
+          titleField.innerText = "Error";
+          subtitleField.innerText = "Internal Server Error ( Rate Limit reached )";
+          descriptionField.innerText = "Try again in 5min or contact support";
+          break;
+        default:
+          titleField.innerText = "Success";
+          subtitleField.innerText = "Thanks for upcycling with us!";
+          descriptionField.innerText = "Check your email for next steps";
+          break;
+      }
+
       document.addEventListener("DOMContentLoaded", function() {
         parent.postMessage(400, "*");
       });
