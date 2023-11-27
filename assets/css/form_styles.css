@@ -62,9 +62,6 @@ optgroup, .input-group-text {
     background: 0 !important;
     border: none;
 }
-#submitButton {
-    padding-top: 8px;
-}
 .alert-dark {
     color: #ffffff;
     background-color: #000000;
@@ -73,5 +70,5 @@ optgroup, .input-group-text {
 .btn-dark {
     color: #fff;
     background-color: #000000;
-    padding: 0 80px;
+    padding: 8px 80px;
 }
