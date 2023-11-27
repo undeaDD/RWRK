@@ -220,7 +220,11 @@
     ></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/form.js"></script>
-    <script src="./assets/js/frameResizerContent.js?v=3"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            parent.postMessage({height: 1700}, "*");
+        });
+    </script>
   </body>
 </html>
 
