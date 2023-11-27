@@ -22,6 +22,7 @@
             <h1 id="titleField" class="logo mb-5"></h1>
             <h3 id="subtitleField"></h3><br/>
             <p id="descriptionField"></p>
+            <a id="backButton" class="btn btn-dark d-none">Go back</a>
           </div>
         </div>
         <div class="col-lg"></div>
@@ -44,27 +45,32 @@
       let titleField = document.getElementById("titleField");
       let subtitleField = document.getElementById("subtitleField");
       let descriptionField = document.getElementById("descriptionField");
+      let backButton = document.getElementById("backButton");
 
       switch(params.get("error")) {
         case "1":
           titleField.innerText = "Error";
           subtitleField.innerText = "This Page cannot be viewed outside our main page";
           descriptionField.innerText = "Go back to: https://rwrkstudio.com";
+          backButton.classList.remove("d-none");
           break;
         case "2":
           titleField.innerText = "Error";
           subtitleField.innerText = "You selected an invalid country";
           descriptionField.innerText = "Try again";
+          backButton.classList.remove("d-none");
           break;
         case "3":
           titleField.innerText = "Error";
           subtitleField.innerText = "Internal Server Error ( Rate Limit reached )";
           descriptionField.innerText = "Try again in 5min or contact support";
+          backButton.classList.remove("d-none");
           break;
         default:
           titleField.innerText = "Success";
           subtitleField.innerText = "Thanks for upcycling with us!";
           descriptionField.innerText = "Check your email for next steps";
+          backButton.classList.add("d-none");
           break;
       }
 
