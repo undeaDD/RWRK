@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('message',function(event) {
-        console.log(event);
+        if (event.data) {
+            console.log(event.data);
+            document.getElementById("apiFrame").style.height = event.data + "px";
+        }
     }, false);
 });
