@@ -2,4 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     iFrameResize({ log: true }, '#apiFrame');
+    document.getElementById('apiFrame').onload = function() {
+        iFrameResize({ log: true }, '#apiFrame');
+    }
 });
