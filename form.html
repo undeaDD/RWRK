@@ -101,7 +101,7 @@
                             <img src="./assets/res/fendi.webp">
                             Fendi
                         </div>
-                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="fendiAmount" id="fendiAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
+                        <input readonly oninput="constrainUserInput(this.id)" inputMode="numeric" required name="fendiAmount" id="fendiAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -119,7 +119,7 @@
                             <img src="./assets/res/gucci.webp">
                             Gucci
                         </div>
-                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="gucciAmount" id="gucciAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
+                        <input readonly oninput="constrainUserInput(this.id)" inputMode="numeric" required name="gucciAmount" id="gucciAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item d-none">
@@ -128,7 +128,7 @@
                             <img src="./assets/res/hermes.webp">
                             Hermes
                         </div>
-                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="hermesAmount" id="hermesAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
+                        <input readonly oninput="constrainUserInput(this.id)" inputMode="numeric" required name="hermesAmount" id="hermesAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item d-none">
@@ -137,7 +137,7 @@
                             <img src="./assets/res/burberry.webp">
                             Burberry
                         </div>
-                        <input oninput="constrainUserInput(this.id)" inputMode="numeric" required name="burberryAmount" id="burberryAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
+                        <input readonly oninput="constrainUserInput(this.id)" inputMode="numeric" required name="burberryAmount" id="burberryAmount" type="number" class="form-control" value="0" min="0" max="50" onchange="calcAmount()">
                     </div>
                 </li>
                 <li class="list-group-item mb-4">
@@ -147,7 +147,7 @@
                         <div class="input-group-text" id="totalCurrency">
                             £
                         </div>
-                        <input name="totalAmount" id="totalAmount" type="text" class="form-control" value="0" disabled>
+                        <input name="totalAmount" id="totalAmount" type="text" class="form-control" value="0" readonly>
                     </div>
                 </li>
             </ul>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
 
-                <input type="text" class="form-control mb-3" id="addressCountry" disabled value="Country: -">
+                <input type="text" class="form-control mb-3" id="addressCountry" readonly value="Country: -">
                 <input required inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
                 <input required inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-4">
 
