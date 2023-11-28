@@ -60,30 +60,30 @@ const calcAmount = () => {
   }
 
   const lvValue = lvAmount.value >= 0 && lvAmount.value <= 50 ? lvAmount.value : 0;
-  min += lvValue * 10.0 * multiplier;
-  max += lvValue * 20.0 * multiplier;
+  min += lvValue * 10 * multiplier;
+  max += lvValue * 20 * multiplier;
 
   const fendiValue = fendiAmount.value >= 0 && fendiAmount.value <= 50 ? fendiAmount.value : 0;
-  min += fendiValue * 10.0 * multiplier;
-  max += fendiValue * 20.0 * multiplier;
+  min += fendiValue * 10 * multiplier;
+  max += fendiValue * 20 * multiplier;
 
   const chanelValue = chanelAmount.value >= 0 && chanelAmount.value <= 50 ? chanelAmount.value : 0;
-  min += chanelValue * 10.0 * multiplier;
-  max += chanelValue * 20.0 * multiplier;
+  min += chanelValue * 10 * multiplier;
+  max += chanelValue * 20 * multiplier;
 
   const gucciValue = gucciAmount.value >= 0 && gucciAmount.value <= 50 ? gucciAmount.value : 0;
-  min += gucciValue * 10.0 * multiplier;
-  max += gucciValue * 20.0 * multiplier;
+  min += gucciValue * 10 * multiplier;
+  max += gucciValue * 20 * multiplier;
 
   const hermesValue = hermesAmount.value >= 0 && hermesAmount.value <= 50 ? hermesAmount.value : 0;
-  min += hermesValue * 10.0 * multiplier;
-  max += hermesValue * 20.0 * multiplier;
+  min += hermesValue * 10 * multiplier;
+  max += hermesValue * 20 * multiplier;
 
   const burberryValue = burberryAmount.value >= 0 && burberryAmount.value <= 50 ? burberryAmount.value : 0;
-  min += burberryValue * 10.0 * multiplier;
-  max += burberryValue * 20.0 * multiplier;
+  min += burberryValue * 10 * multiplier;
+  max += burberryValue * 20 * multiplier;
 
-  totalAmount.value = min + " - " + max;
+  totalAmount.value = Math.trunc(min) + " - " + Math.trunc(max);
   toggleSubmitButton();
 }
 
