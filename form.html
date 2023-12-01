@@ -183,11 +183,20 @@
                         <input required autocomplete="shipping address-level2" name="city" type="text" placeholder="City" class="form-control">
                     </div>
                     <div class="col">
-                        <input required autocomplete="postal-code" type="text" name="zip" placeholder="Postcode / Zipcode" class="form-control">
+                        <input required autocomplete="postal-code" type="text" name="zip" placeholder="Zip / Post-code" class="form-control">
                     </div>
                 </div>
 
-                <input type="text" class="form-control mb-3" id="addressCountry" readonly value="Country: -">
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control mb-3" id="addressCountry" readonly value="Country: -">
+                    </div>
+                    <div class="col">
+                        <input autocomplete="shipping state province" type="text" name="state" placeholder="State" class="form-control">
+                    </div>
+                </div>
+
+                
                 <input required inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control mb-3">
                 <input required inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control mb-4">
 
