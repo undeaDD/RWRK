@@ -1,10 +1,3 @@
-if (window === window.parent) {
-  const value = new URLSearchParams(window.location.search).get('debug');
-  if (value === null || value !== "true") {
-    parent.location.href = "https://rwrkstudio.com";
-  }
-}
-
 let countryElement = document.getElementById("country");
 let addressCountry = document.getElementById("addressCountry");
 let totalCurrency = document.getElementById("totalCurrency");
