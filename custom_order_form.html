@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RWRK - Form</title>
+        <meta charset="utf-8" />
+        <meta name="title" content="RWRK - Form" />
+        <meta name="description" content="We are RwrkStudio, a lifestyle company that offers a white-label upcycling service to luxury fashion brands." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#FFFFFF" />
+        
+        <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="./assets/res/favicon.webp" rel="icon" />
+        <link href="./assets/css/form_styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container" class="container p-4">
+            
+            <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/send-dust-bag">
+                <h5 class="my-4">1. Contact information</h5>
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <input required autocomplete="given-name" name="firstname" type="text" placeholder="First name" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input required autocomplete="family-name" name="lastname" type="text" placeholder="Last name" class="form-control">
+                    </div>
+                </div>            
+                <input name="countryName" id="countryName" type="hidden">
+                <select autocomplete="off" required class="form-select mb-3" id="country" name="country">
+                    <option selected>Select your country</option>
+                    <optgroup label="US Partners">
+                        <option value="0">United States of America</option>
+                        <option value="1">Canada</option>
+                        <option value="2">Mexico</option>
+                    </optgroup>
+                    <optgroup label="UK Partners">
+                        <option value="3">Albania</option>
+                        <option value="4">Andorra</option>
+                        <option value="5">Armenia</option>
+                        <option value="6">Austria</option>
+                        <option value="7">Azerbaijan</option>
+                        <option value="8">Belarus</option>
+                        <option value="9">Belgium</option>
+                        <option value="10">Bosnia and Herzegovina</option>
+                        <option value="11">Bulgaria</option>
+                        <option value="12">Croatia</option>
+                        <option value="13">Cyprus</option>
+                        <option value="14">Czechia</option>
+                        <option value="15">Denmark</option>
+                        <option value="16">Estonia</option>
+                        <option value="17">Finland</option>
+                        <option value="18">France</option>
+                        <option value="19">Georgia</option>
+                        <option value="20">Germany</option>
+                        <option value="21">Greece</option>
+                        <option value="22">Hungary</option>
+                        <option value="23">Iceland</option>
+                        <option value="24">Ireland</option>
+                        <option value="25">Italy</option>
+                        <option value="26">Kazakhstan</option>
+                        <option value="27">Kosovo</option>
+                        <option value="28">Latvia</option>
+                        <option value="29">Liechtenstein</option>
+                        <option value="30">Lithuania</option>
+                        <option value="31">Luxembourg</option>
+                        <option value="32">Malta</option>
+                        <option value="33">Moldova</option>
+                        <option value="34">Monaco</option>
+                        <option value="35">Montenegro</option>
+                        <option value="36">Netherlands</option>
+                        <option value="37">North Macedonia</option>
+                        <option value="38">Norway</option>
+                        <option value="39">Poland</option>
+                        <option value="40">Portugal</option>
+                        <option value="41">Romania</option>
+                        <option value="42">Russia</option>
+                        <option value="43">San Marino</option>
+                        <option value="44">Serbia</option>
+                        <option value="45">Slovakia</option>
+                        <option value="46">Slovenia</option>
+                        <option value="47">Spain</option>
+                        <option value="48">Sweden</option>
+                        <option value="49">Switzerland</option>
+                        <option value="50">Turkey</option>
+                        <option value="51">United Kingdom</option>
+                        <option value="52">United Arab Emirates</option>
+                    </optgroup>
+                </select>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input required inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input required inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control">
+                    </div>
+                </div>
+                <input required inputMode="text" autocomplete="username" name="username" type="text" placeholder="Instagram handle (optional)" class="form-control mb-4">
+            <hr>
+
+            <h5 class="my-4">2. Tell us what you would like to upcycle</h5>
+
+            <textarea name="notes" class="form-control mb-4" id="floatingTextarea2" rows="5"></textarea>
+
+            <hr>
+
+            <h5 class="my-4">3. File upload</h5>
+
+            <input type="file" name="files[]" class="form-control mb-3" />
+            <p class="mb-3">Provide us with images/videos of the item(s) you would like to upcycle. The more images the better, consider taking a pictures of the different parts of the item(s)*</p>
+            <p class="mb-3">Provide us with any reference images/videos of what you want us to make - No worries if you don't have any the team can help with that :)</p>
+            
+            <hr>
+
+         </form>  
+        </div>
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            parent.postMessage(2000, "*");
+        });
+    </script>
+  </body>
+</html>
+
+
