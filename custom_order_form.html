@@ -15,18 +15,17 @@
     <body>
         <div id="container" class="container p-4">
             
-            <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/send-dust-bag">
+            <form id="form" autocomplete="on" method="POST" action="https://deltasiege.de/api/custom-order">
                 <h5 class="my-4">1. Contact information</h5>
                 
                 <div class="row mb-3">
                     <div class="col">
-                        <input required autocomplete="given-name" name="firstname" type="text" placeholder="First name" class="form-control">
+                        <input required inputMode="text" autocomplete="given-name" id="firstname" name="firstname" type="text" placeholder="First name" class="form-control" onchange="toggleSubmitButton()" required>
                     </div>
                     <div class="col">
-                        <input required autocomplete="family-name" name="lastname" type="text" placeholder="Last name" class="form-control">
+                        <input required inputMode="text" autocomplete="family-name" id="lastname" name="lastname" type="text" placeholder="Last name" class="form-control" onchange="toggleSubmitButton()" required>
                     </div>
                 </div>            
-                <input name="countryName" id="countryName" type="hidden">
                 <select autocomplete="off" required class="form-select mb-3" id="country" name="country">
                     <option selected>Select your country</option>
                     <optgroup label="US Partners">
@@ -89,18 +88,18 @@
                 </select>
                 <div class="row mb-3">
                     <div class="col">
-                        <input required inputMode="email" autocomplete="email" name="email" type="text" placeholder="E-Mail" class="form-control">
+                        <input required inputMode="email" autocomplete="email" id="email" name="email" type="text" placeholder="E-Mail" class="form-control" onchange="toggleSubmitButton()" required>
                     </div>
                     <div class="col">
-                        <input required inputMode="tel" autocomplete="tel" name="phone" type="text" placeholder="Phone" class="form-control">
+                        <input required inputMode="tel" autocomplete="tel" id="phone" name="phone" type="text" placeholder="Phone" class="form-control" onchange="toggleSubmitButton()" required>
                     </div>
                 </div>
-                <input required inputMode="text" autocomplete="username" name="username" type="text" placeholder="Instagram handle (optional)" class="form-control mb-4">
+                <input required inputMode="text" autocomplete="username" id="instagram" name="instagram" type="text" placeholder="Instagram handle (optional)" class="form-control mb-4">
             <hr>
 
             <h5 class="my-4">2. Tell us what you would like to upcycle</h5>
 
-            <textarea name="notes" class="form-control mb-4" id="floatingTextarea2" rows="5"></textarea>
+            <textarea name="notes" class="form-control mb-4" id="notes" rows="5" onchange="toggleSubmitButton()"></textarea>
 
             <hr>
 
@@ -108,15 +107,15 @@
 
             <p class="mb-3">Provide us with images/videos of the item(s) you would like to upcycle. The more images the better, consider taking a pictures of the different parts of the item(s)*</p>
 
-            <input type="file" name="products[]" class="form-control mb-3" accept="video/*, image/*, application/pdf" multiple />
+            <input type="file" id="products" name="products[]" class="form-control mb-3" accept="video/*, image/*, application/pdf" multiple required/>
             
             <hr>
 
             <h5 class="my-4">4. Reference images / videos</h5>
 
-            <p class="mb-3">Provide us with any reference images/videos of what you want us to make - No worries if you don't have any the team can help with that :)</p>
+            <p class="mb-3">Provide us with any reference images/videos of what you want us to make - No worries if you don't have any the team can help with that (optional)</p>
 
-            <input type="file" name="references[]" class="form-control mb-3" accept="video/*, image/*, application/pdf" multiple />
+            <input type="file" id="references" name="references[]" class="form-control mb-3" accept="video/*, image/*, application/pdf" multiple />
             
             <hr>
 
