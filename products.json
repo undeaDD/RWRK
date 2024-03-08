@@ -2,42 +2,8 @@
   {
     "title": "Dustbag Pufferjacket",
     "imageUrl": "https://api.rwrkstudio.com/assets/res/pufferjacket.png",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      {
-        "name": "Chanel",
-        "color": [
-          0,
-          0,
-          0,
-          1
-        ]
-      },
-      {
-        "color": [
-          0.76,
-          0.71,
-          0.48,
-          1
-        ],
-        "name": "Old LV"
-      },
-      {
-        "name": "New LV",
-        "color": [
-          0.90,
-          0.89,
-          0.83,
-          1
-        ]
-      }
-    ]
+  }, {
+    "title": "Clear Shopping Bag Kit",
+    "imageUrl": "https://api.rwrkstudio.com/assets/res/clear_bag_kit.png",
   }
 ]
